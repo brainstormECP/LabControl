@@ -1,0 +1,45 @@
+{% extends 'layout.html.twig' %}
+
+{% block body -%}
+    <h1>Muestra list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Noorden</th>
+                <th>Claveinterna</th>
+                <th>Claveexterna</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('muestra_show', { 'id': entity.Id }) }}">{{ entity.Id }}</a></td>
+                <td>{{ entity.NoOrden }}</td>
+                <td>{{ entity.ClaveInterna }}</td>
+                <td>{{ entity.ClaveExterna }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('muestra_show', { 'id': entity.Id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('muestra_edit', { 'id': entity.Id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('muestra_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

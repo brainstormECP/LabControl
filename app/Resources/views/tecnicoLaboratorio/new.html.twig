@@ -1,0 +1,15 @@
+{% extends 'layout.html.twig' %}
+
+{% block body -%}
+    <h1>TecnicoLaboratorio creation</h1>
+
+    {{ form(form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('tecnicolaboratorio') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

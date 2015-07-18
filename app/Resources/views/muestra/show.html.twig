@@ -1,0 +1,40 @@
+{% extends 'layout.html.twig' %}
+
+{% block body -%}
+    <h1>Muestra</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.Id }}</td>
+            </tr>
+            <tr>
+                <th>Noorden</th>
+                <td>{{ entity.NoOrden }}</td>
+            </tr>
+            <tr>
+                <th>Claveinterna</th>
+                <td>{{ entity.ClaveInterna }}</td>
+            </tr>
+            <tr>
+                <th>Claveexterna</th>
+                <td>{{ entity.ClaveExterna }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('muestra') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('muestra_edit', { 'id': entity.Id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

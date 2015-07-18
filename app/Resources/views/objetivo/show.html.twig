@@ -1,0 +1,32 @@
+{% extends 'layout.html.twig' %}
+
+{% block body -%}
+    <h1>Objetivo</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.Id }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ entity.Descripcion }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('objetivo') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('objetivo_edit', { 'id': entity.Id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

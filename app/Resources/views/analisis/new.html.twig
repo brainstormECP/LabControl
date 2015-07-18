@@ -1,0 +1,115 @@
+{% extends 'tecnico.layout.html.twig' %}
+
+{% block content -%}
+<div class="col-lg-12">
+    <h1>Agregar Análisis</h1>
+    <div class="panel panel-default">
+        <div class="panel-heading"> </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    {{ form_start(form, {'attr':{ 'class':'form-horizontal' }}) }}
+                    <div class="form-group">
+                        <div class="col-md-7">
+
+                            {{ form_widget(form.Nombre,{'attr':{ 'class':'form-control','placeholder':'Nombre' }}) }}
+                            {{ form_errors(form.Nombre) }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h3>{{ form_label(form.Campos) }}</h3>
+                        <div class="col-md-7">
+                            <div class="campos" data-prototype="{{ form_widget(form.Campos.vars.prototype)| e }}">
+                                {# iterate over each existing tag and render its only field: name #}
+                                {% for campo in form.Campos %}
+                                    <div class="col-md-7">
+                                        <div class="form-group input-group">
+                                            {{ form_widget(campo.Nombre,{'attr':{ 'class':'form-control' }}) }}
+                                            {{ form_errors(campo.Nombre) }}
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-7">
+                            {{ form_label(form.Formula) }}
+                            {{ form_widget(form.Formula,{'attr':{ 'class':'form-control' }}) }}
+                            {{ form_errors(form.Formula) }}
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-success" value="Crear">
+                    <a href="{{ path('analisis') }}" class="btn btn-default">Lista de análisis</a>
+                    {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+{% endblock %}
+
+{% block aditionalscripts %}
+    <script>
+        var collectionHolder;
+
+        // setup an "add a tag" link
+        var addTagLink = $('<a href="#" class="btn btn-success">Añadir Campo</a>' );
+        var newLinkLi = $('<div class="col-md-7" ></div>' ). append(addTagLink);
+        jQuery(document). ready(function() {
+            // Get the ul that holds the collection of tags
+            collectionHolder = $('div.campos' );
+
+            // add a delete link to all of the existing tag form li elements
+            collectionHolder.find('div.form-group').each(function() {
+                addTagFormDeleteLink($(this));
+            });
+
+            // add the "add a tag" anchor and li to the tags ul
+            collectionHolder. append(newLinkLi);
+            // count the current form inputs we have (e.g. 2), use that as the new
+            // index when inserting a new item (e.g. 2)
+            collectionHolder. data('index' , collectionHolder. find(':input' ). length);
+            addTagLink. on('click' , function(e) {
+                // prevent the link from creating a "#" on the URL
+                e. preventDefault();
+                // add a new tag form (see next code block)
+                addTagForm(collectionHolder, newLinkLi);
+            });
+        });
+        function addTagForm(collectionHolder, newLinkLi) {
+            // Get the data-prototype explained earlier
+            var prototype = collectionHolder. data('prototype' );
+            // get the new index
+            var index = collectionHolder. data('index' );
+            // Replace '__name__' in the prototype's HTML to
+            // instead be a number based on how many items we have
+            var newForm = prototype. replace('<label for="appbundle_analisis_Campos___name___Nombre">Nombre</label>', '');
+            newForm = newForm. replace(/__name__/g, index);
+            newForm = newForm.replace(/<div /g, '<div class="form-group input-group" ');
+            newForm = newForm.replace('<input ', '<input class="form-control" ');
+
+
+            // increase the index with one for the next item
+            collectionHolder. data('index' , index + 1);
+            // Display the form in the page in an li, before the "Add a tag" link li
+            var newFormLi = $('<div class="col-md-7"></div>' ). append(newForm);
+            newLinkLi.before(newFormLi);
+
+            // add a delete link to the new form
+            addTagFormDeleteLink(newFormLi.children());
+        }
+
+        function addTagFormDeleteLink(tagFormLi) {
+            var removeFormA = $('<a href="#" class="input-group-addon btn btn-danger"><i class="fa fa-trash-o"/></a>');
+            tagFormLi.append(removeFormA);
+            removeFormA.on('click', function(e) {
+                // prevent the link from creating a "#" on the URL
+                e.preventDefault();
+                // remove the li for the tag form
+                tagFormLi.remove();
+            });
+        }
+    </script>
+{% endblock %}

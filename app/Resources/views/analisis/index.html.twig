@@ -1,0 +1,41 @@
+{% extends 'tecnico.layout.html.twig' %}
+
+{% block content -%}
+    <div class="col-lg-12">
+        <h1>Lista de Análisis</h1>
+    <div class="panel panel-default">
+        <div class="panel-heading"> <a href="{{ path('analisis_new') }}" class="btn btn-info">Nuevo Análisis</a> </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fórmula</th>
+                        <th>Acciones</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for entity in entities %}
+                        <tr>
+                            <td>{{ entity.Nombre }}</td>
+                            <td>{{ entity.Formula }}</td>
+                            <td>
+                                <a class="btn btn-info" href="{{ path('analisis_edit', { 'id': entity.Id }) }}">Editar</a>|
+                                <a class="btn btn-danger" href="{{ path('analisis_show', { 'id': entity.Id }) }}">Eliminar</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+        </div>
+
+
+
+    {% endblock %}
