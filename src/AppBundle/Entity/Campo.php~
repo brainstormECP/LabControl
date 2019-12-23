@@ -1,0 +1,138 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Elvis
+ * Date: 07/07/2015
+ * Time: 08:53:AM
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+
+/**
+ * @ORM\Table(name="campo")
+ * @ORM\Entity()
+ */
+class Campo {
+
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $Id;
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    protected $Nombre;
+
+    /**
+     * @var Analisis
+     * @ORM\ManyToOne(targetEntity="Analisis")
+     * @ORM\JoinColumn(name="AnalisisId",referencedColumnName="Id")
+     */
+    protected $Analisis;
+
+    /**
+     * @ORM\OneToMany(targetEntity="CampoAnalisisValor",mappedBy="Campo")
+     */
+    protected $CampoAnalisisValores;
+
+
+    public function __construct(){
+        $this->CampoAnalisisValores = new ArrayCollection();
+    }
+
+    /**
+     * Get Id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->Id;
+    }
+
+    /**
+     * Set Nombre
+     *
+     * @param string $nombre
+     * @return Campo
+     */
+    public function setNombre($nombre)
+    {
+        $this->Nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get Nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->Nombre;
+    }
+
+    /**
+     * Set Analisis
+     *
+     * @param \AppBundle\Entity\Analisis $analisis
+     * @return Campo
+     */
+    public function setAnalisis(\AppBundle\Entity\Analisis $analisis = null)
+    {
+        $this->Analisis = $analisis;
+
+        return $this;
+    }
+
+    /**
+     * Get Analisis
+     *
+     * @return \AppBundle\Entity\Analisis 
+     */
+    public function getAnalisis()
+    {
+        return $this->Analisis;
+    }
+
+    /**
+     * Add CampoAnalisisValores
+     *
+     * @param \AppBundle\Entity\CampoAnalisisValor $campoAnalisisValores
+     * @return Campo
+     */
+    public function addCampoAnalisisValore(\AppBundle\Entity\CampoAnalisisValor $campoAnalisisValores)
+    {
+        $this->CampoAnalisisValores[] = $campoAnalisisValores;
+
+        return $this;
+    }
+
+    /**
+     * Remove CampoAnalisisValores
+     *
+     * @param \AppBundle\Entity\CampoAnalisisValor $campoAnalisisValores
+     */
+    public function removeCampoAnalisisValore(\AppBundle\Entity\CampoAnalisisValor $campoAnalisisValores)
+    {
+        $this->CampoAnalisisValores->removeElement($campoAnalisisValores);
+    }
+
+    /**
+     * Get CampoAnalisisValores
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCampoAnalisisValores()
+    {
+        return $this->CampoAnalisisValores;
+    }
+}

@@ -1,0 +1,94 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Elvis
+ * Date: 07/07/2015
+ * Time: 16:25
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Table(name="objetivo")
+ * @ORM\Entity()
+ */
+class Objetivo {
+
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $Id;
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    protected $Descripcion;
+
+    /**
+     * @var Experimento
+     * @ORM\ManyToOne(targetEntity="Experimento", inversedBy="Objetivos")
+     * @ORM\JoinColumn(name="ExperimentoId", referencedColumnName="Id")
+     */
+    protected $Experimento;
+
+    /**
+     * Get Id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->Id;
+    }
+
+    /**
+     * Set Descripcion
+     *
+     * @param string $descripcion
+     * @return Objetivo
+     */
+    public function setDescripcion($descripcion)
+    {
+        $this->Descripcion = $descripcion;
+
+        return $this;
+    }
+
+    /**
+     * Get Descripcion
+     *
+     * @return string 
+     */
+    public function getDescripcion()
+    {
+        return $this->Descripcion;
+    }
+
+    /**
+     * Set Experimento
+     *
+     * @param \AppBundle\Entity\Experimento $experimento
+     * @return Objetivo
+     */
+    public function setExperimento(\AppBundle\Entity\Experimento $experimento = null)
+    {
+        $this->Experimento = $experimento;
+
+        return $this;
+    }
+
+    /**
+     * Get Experimento
+     *
+     * @return \AppBundle\Entity\Experimento 
+     */
+    public function getExperimento()
+    {
+        return $this->Experimento;
+    }
+}

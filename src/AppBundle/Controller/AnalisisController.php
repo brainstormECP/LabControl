@@ -2,7 +2,9 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\AnalisisReactivo;
 use AppBundle\Entity\Campo;
+use AppBundle\Form\AnalisisReactivoType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -37,6 +39,7 @@ class AnalisisController extends Controller
             'entities' => $entities
         ));
     }
+
     /**
      * Creates a new Analisis entity.
      *
@@ -51,6 +54,7 @@ class AnalisisController extends Controller
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+
             $em->persist($entity);
             $em->flush();
 
@@ -59,7 +63,7 @@ class AnalisisController extends Controller
 
         return $this->render('analisis/new.html.twig', array(
             'entity' => $entity,
-            'form'   => $form->createView(),
+            'form' => $form->createView(),
         ));
     }
 
@@ -90,11 +94,11 @@ class AnalisisController extends Controller
     public function newAction(Request $request)
     {
         $entity = new Analisis();
-        $form   = $this->createCreateForm($entity);
+        $form = $this->createCreateForm($entity);
 
         return $this->render('analisis/new.html.twig', array(
             'entity' => $entity,
-            'form'   => $form->createView(),
+            'form' => $form->createView(),
         ));
     }
 
@@ -118,7 +122,7 @@ class AnalisisController extends Controller
         $deleteForm = $this->createDeleteForm($id);
 
         return $this->render('analisis/show.html.twig', array(
-            'entity'      => $entity,
+            'entity' => $entity,
             'delete_form' => $deleteForm->createView(),
         ));
     }
@@ -144,19 +148,19 @@ class AnalisisController extends Controller
         $deleteForm = $this->createDeleteForm($id);
 
         return $this->render('analisis/edit.html.twig', array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
+            'entity' => $entity,
+            'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
     }
 
     /**
-    * Creates a form to edit a Analisis entity.
-    *
-    * @param Analisis $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    */
+     * Creates a form to edit a Analisis entity.
+     *
+     * @param Analisis $entity The entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
     private function createEditForm(Analisis $entity)
     {
         $form = $this->createForm(new AnalisisType(), $entity, array(
@@ -166,6 +170,7 @@ class AnalisisController extends Controller
 
         return $form;
     }
+
     /**
      * Edits an existing Analisis entity.
      *
@@ -194,7 +199,7 @@ class AnalisisController extends Controller
         if ($editForm->isValid()) {
             // remove the relationship between the tag and the Task
             foreach ($originalCampos as $campo) {
-                if (false === $analisis->getCampos() ->contains($campo)) {
+                if (false === $analisis->getCampos()->contains($campo)) {
                     // if it was a many-to-one relationship, remove the relationship like this
                     // $tag->setTask(null);
                     $campo->setAnalisis(null);
@@ -212,10 +217,11 @@ class AnalisisController extends Controller
         }
 
         return $this->render('analisis/edit.html.twig', array(
-            'entity'      => $analisis,
-            'edit_form'   => $editForm->createView(),
+            'entity' => $analisis,
+            'edit_form' => $editForm->createView(),
         ));
     }
+
     /**
      * Deletes a Analisis entity.
      *
@@ -236,8 +242,13 @@ class AnalisisController extends Controller
             }
             //Eliminando la relacion con los campos
             foreach ($entity->getCampos() as $campo) {
-                    $campo->setAnalisis(null);
-                    $em->remove($campo);
+                $campo->setAnalisis(null);
+                $em->remove($campo);
+            }
+            //Eliminando la relacion con los reactivos
+            foreach ($entity->getAnalisisReactivos() as $reactivo) {
+                $reactivo->setAnalisis(null);
+                $em->remove($reactivo);
             }
 
             $em->remove($entity);
@@ -259,8 +270,195 @@ class AnalisisController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('analisis_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Borrar','attr' => array('class' => 'btn btn-danger')))
-            ->getForm()
-        ;
+            ->add('submit', 'submit', array('label' => 'Borrar', 'attr' => array('class' => 'btn btn-danger')))
+            ->getForm();
     }
+
+    /**
+     * Añade la cantidad de reactivos de un analisis.
+     *
+     * @Route("/agregarreactivo", name="agregar_reactivo")
+     * @Method("POST")
+     */
+    public function agregarReactivoAction(Request $request)
+    {
+        $entity = new AnalisisReactivo();
+        $form = $this->createReactivoForm($entity);
+        $form->handleRequest($request);
+
+        $em = $this->getDoctrine()->getManager();
+        $analisis = $em->getRepository('AppBundle:Analisis')->find($request->request->get('id'));
+
+        if ($form->isValid()) {
+            $entity->setAnalisis($analisis);
+            $em->persist($entity);
+            $em->flush();
+
+            $newForm = $this->createReactivoForm(new AnalisisReactivo());
+            return $this->render('analisis/reactivo.html.twig', array(
+                'entity' => new AnalisisReactivo(),
+                'analisis' => $analisis,
+                'form' => $newForm->createView(),
+            ));
+        }
+
+        return $this->render('analisis/reactivo.html.twig', array(
+            'entity' => $entity,
+            'analisis' => $analisis,
+            'form' => $form->createView(),
+        ));
+    }
+
+    /**
+     * Creates a form to create a Analisis entity.
+     *
+     * @param AnalisisReactivo $entity The entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
+    private function createReactivoForm(AnalisisReactivo $entity)
+    {
+        $form = $this->createForm(new AnalisisReactivoType(), $entity, array(
+            'action' => $this->generateUrl('agregar_reactivo'),
+            'method' => 'POST',
+        ));
+
+        return $form;
+    }
+
+    /**
+     * Muestra formulario para agregar reactivos a un analisis
+     *
+     * @Route("/{id}/reactivos", name="analisis_reactivo")
+     * @Method("GET")
+     *
+     */
+    public function reactivoAction(Request $request, $id)
+    {
+        $entity = new AnalisisReactivo();
+        $form = $this->createReactivoForm($entity);
+
+        $em = $this->getDoctrine()->getManager();
+        $analisis = $em->getRepository('AppBundle:Analisis')->find($id);
+
+        return $this->render('analisis/reactivo.html.twig', array(
+            'entity' => $entity,
+            'analisis' => $analisis,
+            'form' => $form->createView(),
+        ));
+    }
+
+
+    /**
+     * Edita la cantidad de reactivos de un analisis.
+     *
+     * @Route("/{id}/reactivos", name="editar_reactivo")
+     * @Method("PUT")
+     */
+    public function editarReactivoAction(Request $request, $id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('AppBundle:AnalisisReactivo')->find($id);
+        $id = $entity->getAnalisis()->getId();
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Analisis entity.');
+        }
+        $form = $this->createEditarReactivoForm($entity);
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+
+            $em->flush();
+
+            $newForm = $this->createReactivoForm(new AnalisisReactivo());
+            return $this->render('analisis/reactivo.html.twig', array(
+                'entity' => new AnalisisReactivo(),
+                'analisis' => $entity->getAnalisis(),
+                'form' => $newForm->createView(),
+            ));
+
+        }
+
+        return $this->render('analisis/reactivo.html.twig', array(
+            'entity' => $entity,
+            'analisis' => $entity->getAnalisis(),
+            'form' => $form->createView(),
+        ));
+    }
+
+    /**
+     * Creates a form to create a Analisis entity.
+     *
+     * @param AnalisisReactivo $entity The entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
+    private function createEditarReactivoForm(AnalisisReactivo $entity)
+    {
+        $form = $this->createForm(new AnalisisReactivoType(), $entity, array(
+            'action' => $this->generateUrl('editar_reactivo', array('id' => $entity->getId())),
+            'method' => 'PUT',
+        ));
+
+        return $form;
+    }
+
+    /**
+     * Muestra formulario para agregar reactivos a un analisis
+     *
+     * @Route("/{id}/reactivos/editar", name="analisis_reactivo_editar")
+     * @Method("GET")
+     *
+     */
+    public function reactivoEditarAction(Request $request, $id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('AppBundle:AnalisisReactivo')->find($id);
+
+        if (!$entity) {
+            throw $this->createNotFoundException('Unable to find Analisis entity.');
+        }
+        $form = $this->createEditarReactivoForm($entity);
+
+        return $this->render('analisis/reactivo.html.twig', array(
+            'entity' => $entity,
+            'analisis' => $entity->getAnalisis(),
+            'form' => $form->createView(),
+        ));
+    }
+
+    /**
+     * Deletes a Analisis entity.
+     *
+     * @Route("/{id}", name="analisis_reactivo_delete")
+     * @Method("DELETE")
+     */
+    public function reactivoDeleteAction(Request $request, $id)
+    {
+        $form = $this->createDeleteForm($id);
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $entity = $em->getRepository('AppBundle:Analisis')->find($id);
+
+            if (!$entity) {
+                throw $this->createNotFoundException('Unable to find Analisis entity.');
+            }
+            //Eliminando la relacion con los campos
+            foreach ($entity->getCampos() as $campo) {
+                $campo->setAnalisis(null);
+                $em->remove($campo);
+            }
+
+            $em->remove($entity);
+            $em->flush();
+        }
+
+        return $this->redirect($this->generateUrl('analisis'));
+    }
+
 }

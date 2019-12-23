@@ -11,6 +11,7 @@ namespace AppBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -20,7 +21,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @version 0.1
  *
  * @ORM\Table(name="users")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\UserRepository")
  * @ORM\InheritanceType("JOINED")
  * @ORM\DiscriminatorColumn(name="disc", type="string")
  * @ORM\DiscriminatorMap({
@@ -41,7 +42,7 @@ class User implements AdvancedUserInterface, \Serializable
      * @var string
      * @ORM\Column(type="string", length=25, unique=true, nullable=true)
      */
-    protected $userName;
+    protected $username;
 
     /**
      * @var string
@@ -166,7 +167,7 @@ class User implements AdvancedUserInterface, \Serializable
     {
         return serialize(array(
             $this->id,
-            $this->userName,
+            $this->username,
             $this->password,
             $this->isActive,
         ));
@@ -185,7 +186,7 @@ class User implements AdvancedUserInterface, \Serializable
     {
         list (
             $this->id,
-            $this->userName,
+            $this->username,
             $this->password,
             $this->isActive,
             ) = unserialize($serialized);
@@ -209,7 +210,11 @@ class User implements AdvancedUserInterface, \Serializable
      */
     public function getRoles()
     {
-        return $this->roles->toArray();
+        $r = array();
+        foreach($this->roles as $ro) {
+            array_push($r,$ro->getRole());
+        }
+        return $r;
     }
 
     /**
@@ -244,7 +249,7 @@ class User implements AdvancedUserInterface, \Serializable
      */
     public function getUsername()
     {
-        return $this->userName;
+        return $this->username;
     }
 
     /**
@@ -276,7 +281,7 @@ class User implements AdvancedUserInterface, \Serializable
      */
     public function setUsername($username)
     {
-        $this->userName = $username;
+        $this->username = $username;
 
         return $this;
     }

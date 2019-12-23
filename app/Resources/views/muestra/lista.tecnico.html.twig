@@ -1,0 +1,30 @@
+{% extends 'layout.html.twig' %}
+
+{% block content -%}
+    <h1>Lista de Muestras</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>No orden</th>
+                <th>Clave interna</th>
+                <th>Clave externa</th>
+                <th>Análisis pendientes</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.NoOrden }}</td>
+                <td>{{ entity.ClaveInterna }}</td>
+                <td>{{ entity.ClaveExterna }}</td>
+                <td>{{ entity.AnalisisPendientes }}</td>
+                <td>
+                     <a href="{{ path('muestra_analisis', { 'id': entity.Id }) }}">Análisis</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% endblock %}

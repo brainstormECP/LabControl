@@ -1,0 +1,22 @@
+B I E N V E N I D O
+**********************************************
+Sitio Web oficial de Nevada
+----------------------------------------------
+-> REGISTRO DE USUARIO
+----------------------------------------------
+Usted ha recibido este email pues ha sido
+registrado en nuestro sistema como usuario
+bajo los siguientes datos:
+Nombre: {{ entity.name }}
+Email: {{ entity.email }}
+Usted debe activar su cuenta visitando el
+siguiente link:
+{{ url('activation', {'token': entity.activationToken}) }}
+
+----------------------------------------------
+si considera que esto es incorrecto
+simplemente ignore este correo.
+----------------------------------------------
+
+Atentamente,
+Distribuidora Nevada

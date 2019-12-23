@@ -1,0 +1,30 @@
+{% extends 'layout.html.twig' %}
+
+{% block content -%}
+    <h1>Lista de Planificaciones</h1>
+
+    <a class="btn btn-success" href="{{ path('planificacioncorteexperimento_new') }}">Nueva planificacion</a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Experimento</th>
+            <th>Fecha</th>
+            <th>Descripcion</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.experimento }}</td>
+                <td>{% if entity.fecha %}{{ entity.fecha|date('d/m/Y') }}{% endif %}</td>
+                <td>{{ entity.descripcion }}</td>
+                <td>
+                    <a class="btn btn-info" href="{{ path('planificacioncorteexperimento_edit', { 'id': entity.Id }) }}">Editar</a>
+                    <a class="btn btn-danger" href="{{ path('planificacioncorteexperimento_show', { 'id': entity.Id }) }}">Borrar</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

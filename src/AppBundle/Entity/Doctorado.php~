@@ -1,0 +1,94 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Elvis
+ * Date: 07/07/2015
+ * Time: 16:26
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Table(name="doctorado")
+ * @ORM\Entity()
+ */
+class Doctorado  {
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    protected $Especialidad;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    protected $Experimentos;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->Experimentos = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Set Especialidad
+     *
+     * @param string $especialidad
+     * @return Doctorado
+     */
+    public function setEspecialidad($especialidad)
+    {
+        $this->Especialidad = $especialidad;
+
+        return $this;
+    }
+
+    /**
+     * Get Especialidad
+     *
+     * @return string 
+     */
+    public function getEspecialidad()
+    {
+        return $this->Especialidad;
+    }
+
+
+    /**
+     * Add Experimentos
+     *
+     * @param \AppBundle\Entity\Experimento $experimentos
+     * @return Doctorado
+     */
+    public function addExperimento(\AppBundle\Entity\Experimento $experimentos)
+    {
+        $this->Experimentos[] = $experimentos;
+
+        return $this;
+    }
+
+    /**
+     * Remove Experimentos
+     *
+     * @param \AppBundle\Entity\Experimento $experimentos
+     */
+    public function removeExperimento(\AppBundle\Entity\Experimento $experimentos)
+    {
+        $this->Experimentos->removeElement($experimentos);
+    }
+
+    /**
+     * Get Experimentos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getExperimentos()
+    {
+        return $this->Experimentos;
+    }
+}

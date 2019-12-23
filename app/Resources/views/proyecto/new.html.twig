@@ -1,15 +1,33 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
-    <h1>Proyecto creation</h1>
-
-    {{ form(form) }}
-
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('proyecto') }}">
-            Back to the list
-        </a>
-    </li>
-</ul>
+{% block content -%}
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"> <h3>Crear Proyecto</h3></div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-9">
+                        {{ form_start(form, {'attr':{ 'class':'form-horizontal' }}) }}
+                        <div class="form-group">
+                            <div class="col-md-7">
+                                {{ form_label(form.nombre) }}
+                                {{ form_widget(form.nombre,{'attr':{ 'class':'form-control' }}) }}
+                                {{ form_errors(form.nombre) }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-7">
+                                {{ form_label(form.numero,'Número') }}
+                                {{ form_widget(form.numero,{'attr':{ 'class':'form-control' }}) }}
+                                {{ form_errors(form.numero) }}
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Crear">
+                        <a href="{{ path('proyecto') }}" class="btn btn-default">Lista de proyectos</a>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

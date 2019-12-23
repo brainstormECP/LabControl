@@ -31,7 +31,7 @@ class PaisController extends Controller
 
         $entities = $em->getRepository('AppBundle:Pais')->findAll();
 
-        return $this->render('', array(
+        return $this->render('pais/index.html.twig', array(
             'entities' => $entities,
         ));
     }
@@ -40,7 +40,6 @@ class PaisController extends Controller
      *
      * @Route("/", name="pais_create")
      * @Method("POST")
-     * @Template("AppBundle:Pais:new.html.twig")
      */
     public function createAction(Request $request)
     {
@@ -52,11 +51,11 @@ class PaisController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
-
-            return $this->redirect($this->generateUrl('pais_show', array('id' => $entity->getId())));
+            $this->get('session')->getFlashBag()->add('info', 'Se creo correctamente el Pais');
+            return $this->redirect($this->generateUrl('pais', array('id' => $entity->getId())));
         }
 
-        return $this->render('', array(
+        return $this->render('pais/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -76,8 +75,6 @@ class PaisController extends Controller
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
-
         return $form;
     }
 
@@ -93,7 +90,7 @@ class PaisController extends Controller
         $entity = new Pais();
         $form   = $this->createCreateForm($entity);
 
-        return $this->render('', array(
+        return $this->render('pais/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -118,7 +115,7 @@ class PaisController extends Controller
 
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('', array(
+        return $this->render('pais/show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -144,7 +141,7 @@ class PaisController extends Controller
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('', array(
+        return $this->render('pais/edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -165,8 +162,6 @@ class PaisController extends Controller
             'method' => 'PUT',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
-
         return $form;
     }
     /**
@@ -174,7 +169,6 @@ class PaisController extends Controller
      *
      * @Route("/{id}", name="pais_update")
      * @Method("PUT")
-     * @Template("AppBundle:Pais:edit.html.twig")
      */
     public function updateAction(Request $request, $id)
     {
@@ -192,11 +186,11 @@ class PaisController extends Controller
 
         if ($editForm->isValid()) {
             $em->flush();
-
-            return $this->redirect($this->generateUrl('pais_edit', array('id' => $id)));
+            $this->get('session')->getFlashBag()->add('info', 'Se edito correctamente el Pais');
+            return $this->redirect($this->generateUrl('pais', array('id' => $id)));
         }
 
-        return $this->render('', array(
+        return $this->render('pais/edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -240,7 +234,7 @@ class PaisController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('pais_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
+            ->add('submit', 'submit', array('label' => 'Borrar', 'attr' => array('class' => 'btn btn-danger')))
             ->getForm()
         ;
     }

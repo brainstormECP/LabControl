@@ -1,0 +1,83 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Situación actual de la información enviada al laboratorio</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class=""></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{ mismuestras }}</div>
+                            <div>Muestras enviadas</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ path('muestras_por_investigador') }}">
+                    <div class="panel-footer">
+                        <span class="pull-left">Ver detalles</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-green">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class=""></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{ miprogramacion }}</div>
+                            <div>Programación anual</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ path('planificacioncorteexperimento') }}">
+                    <div class="panel-footer">
+                        <span class="pull-left">Ver detalles</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-yellow">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class=""></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{ misresultados }}</div>
+                            <div>Resultados de análisis</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ path('muestra_resultado_selector') }}">
+                    <div class="panel-footer">
+                        <span class="pull-left">Ver detalles</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+{% endblock %}

@@ -31,7 +31,7 @@ class EspecieController extends Controller
 
         $entities = $em->getRepository('AppBundle:Especie')->findAll();
 
-        return $this->render('', array(
+        return $this->render('especie/index.html.twig', array(
             'entities' => $entities,
         ));
     }
@@ -40,7 +40,6 @@ class EspecieController extends Controller
      *
      * @Route("/", name="especie_create")
      * @Method("POST")
-     * @Template("AppBundle:Especie:new.html.twig")
      */
     public function createAction(Request $request)
     {
@@ -52,11 +51,11 @@ class EspecieController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
-
-            return $this->redirect($this->generateUrl('especie_show', array('id' => $entity->getId())));
+            $this->get('session')->getFlashBag()->add('info', 'Se agrego correctamente la Especie');
+            return $this->redirect($this->generateUrl('especie'));
         }
 
-        return $this->render('', array(
+        return $this->render('especie/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -76,8 +75,6 @@ class EspecieController extends Controller
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
-
         return $form;
     }
 
@@ -93,7 +90,7 @@ class EspecieController extends Controller
         $entity = new Especie();
         $form   = $this->createCreateForm($entity);
 
-        return $this->render('', array(
+        return $this->render('especie/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -118,7 +115,7 @@ class EspecieController extends Controller
 
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('', array(
+        return $this->render('especie/show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -144,7 +141,7 @@ class EspecieController extends Controller
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('', array(
+        return $this->render('especie/edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -165,8 +162,6 @@ class EspecieController extends Controller
             'method' => 'PUT',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
-
         return $form;
     }
     /**
@@ -174,7 +169,6 @@ class EspecieController extends Controller
      *
      * @Route("/{id}", name="especie_update")
      * @Method("PUT")
-     * @Template("AppBundle:Especie:edit.html.twig")
      */
     public function updateAction(Request $request, $id)
     {
@@ -192,11 +186,11 @@ class EspecieController extends Controller
 
         if ($editForm->isValid()) {
             $em->flush();
-
-            return $this->redirect($this->generateUrl('especie_edit', array('id' => $id)));
+            $this->get('session')->getFlashBag()->add('info', 'Se edito correctamente la Especie');
+            return $this->redirect($this->generateUrl('especie'));
         }
 
-        return $this->render('', array(
+        return $this->render('especie/edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -240,7 +234,7 @@ class EspecieController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('especie_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
+            ->add('submit', 'submit', array('label' => 'Borrar', 'attr' => array('class' => 'btn btn-danger')))
             ->getForm()
         ;
     }

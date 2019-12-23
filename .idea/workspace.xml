@@ -1,0 +1,1933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="db18dcc2-60f3-42fe-a1c2-377ad26726fa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/slides/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/works/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/slides/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/works/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/slides/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/works/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/works/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/uploads/pno/442958d84c920f09680a86a3256b7fe2.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/uploads/pno/4de2dfe01e32dc2d28f7f4843e2f1f82.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/works/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/works/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/works/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/works/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/captcha/fonts/Anorexia.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/fonts/customicon/Icons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/fonts/customicon/Icons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/fonts/customicon/Icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/backRequiredGray.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/back_green-fade.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/back_nav_blue.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/images/bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/login/images/bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/milk/bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/bg_direction_nav.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/fancybox/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/button-submit.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/captcha/images/button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/images/checked.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/images/cmxform-divider.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/images/cmxform-fieldset.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/documentacion.rar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/dummies/dummy-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/fancybox/fancybox_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/fancybox/fancybox_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/fancybox/fancybox_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/glyphicons-halflings-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/login/images/header1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/tinymce/themes/simple/img/icons.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/dummies/blog/img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/dummies/blog/img2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/dummies/blog/img3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation-1.14.0.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/left-nav-callout-long.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/milk/left_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/login-sprite.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/logo_marketo.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/milk/milk.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/nivo-bullets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/login/images/page.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/login/images/required_star.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/milk/right_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/sf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/step1-24.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/step2-24.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/step3-24.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/switch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/tab-sprite.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/tab_green.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/dummies/blog/65x65/thumb1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/dummies/blog/65x65/thumb2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/img/dummies/blog/65x65/thumb3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/time.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/toggle.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/images/unchecked.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/images/warning.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/ActividadCientifica.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/AnalisisMuestraController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/AnalisisMuestraControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/AnalisisMuestraType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/AnalisisReactivoType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/CampoAnalisisValorRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/CampoAnalisisValorType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/ViewModel/EspecieView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/ViewModel/EspecieViewType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/ExperimentoRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Familia.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/FamiliaController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/FamiliaControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/FamiliaType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Genero.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/GeneroController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/GeneroControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/GeneroType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/fonts/customicon/Icons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/InventarioReactivoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/InventarioReactivoControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/LoginController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/MuestraRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/ViewModel/MuestraView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/ViewModel/MuestraViewType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/OtraMuestra.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/OtraMuestraController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/OtraMuestraControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/OtraMuestraType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/ViewModel/OtraMuestraView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/ViewModel/OtraMuestraViewType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/OtroTipoMuestra.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/OtroTipoMuestraController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/OtroTipoMuestraControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/OtroTipoMuestraType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Pasto.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PastoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/PastoControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/PastoType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/ViewModel/PastoView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/ViewModel/PastoViewType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/ViewModel/PeriodoView.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/ViewModel/PeriodoViewType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/PlanificacionCorteExperimento.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PlanificacionCorteExperimentoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/PlanificacionCorteExperimentoControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/PlanificacionCorteExperimentoType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Pno.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PnoController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/PnoControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/PnoType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ReportesController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/ResultadosAnalisisType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/RoleRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_20_10_15_21_57_s.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/UserRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/accept.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/additional-methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/additional-methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/additional-methods.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/additional-methods.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/additional.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/admin.index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/agronomicas.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/ajaxSubmit-integration-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/alphanumeric.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/analisis.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/analisis.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/analisis.resultado.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/anchorify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/api-demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/requirejs/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/test/aria.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/backup.index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/bankaccountNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/bankorgiroaccountNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/bic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bower_components/datepicker/js/bootstrap-datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bower_components/bootstrap/dist/css/bootstrap-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bower_components/bootstrap/dist/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/captcha/captcha.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/emails/change_password.txt.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/cifES.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/css/cmxform.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/css/cmxformTemplate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/css/core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/cpfBR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/creditcardtypes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/css.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/currency.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/custom-fonts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/custom-messages-data-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/custom-methods-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/dateFA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/dateITA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/dateNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bower_components/datepicker/css/datepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/skins/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/dynamic-totals.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/analisismuestra/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/familia/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/genero/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/otramuestra/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/otrotipomuestra/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pasto/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pno/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/AnalisisMuestra/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/tinymce/themes/simple/editor_template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/embbeded-form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/tinymce/themes/simple/langs/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/test/error-placement.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/errorcontainer-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/errors-within-labels.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/extension.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/external-tracking.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/file_input.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/flexslider.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Utiles/fpdf.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.3.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/ga.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/giroaccountNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/grafico.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/iban.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/captcha/images/image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/captcha/image_req.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/analisismuestra/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/familia/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/genero/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/inventarioReactivo/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/otramuestra/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/otrotipomuestra/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pasto/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pno/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/AnalisisMuestra/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/login/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/milk/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/multipart/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/requirejs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/tinymce/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/tinymce4/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/captcha/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/login/institucion.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/integer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/investigador.index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/investigador.planificaciones.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/ipv4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/ipv6.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/lib/jquery-1.11.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/lib/jquery-1.7.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/lib/jquery-1.8.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/lib/jquery-1.9.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/jquery-1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/jquery-migrate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery-ui-1.11.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery-ui-1.11.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/jquery.easing.1.3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/jquery.fancybox-media.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/fancybox/jquery.fancybox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/jquery.fancybox.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/jquery.flexslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/flexslider/jquery.flexslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/lib/jquery.form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/lib/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/jquery.maskedinput.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/lib/jquery.mockjax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.multi-select.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/portfolio/jquery.quicksand.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/quicksand/jquery.quicksand.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/lib/jquery.simulate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/jquery.validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/jquerymobile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/lettersonly.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/letterswithbasicpunc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/lista.tecnico.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/login/login.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/test/messages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_bg.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_bg.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_bn_BD.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_bn_BD.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_bn_BD.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_bn_BD.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_bn_BD.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ca.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ca.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_cs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_cs.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_da.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_da.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_de.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_de.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_el.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_el.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_es.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_es.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_es_AR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_es_AR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_es_AR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_es_AR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_es_AR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_es_PE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_es_PE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_es_PE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_es_PE.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_es_PE.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_et.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_et.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_eu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_eu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_fa.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_fa.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_fi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_fi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_fr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_fr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_ge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ge.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ge.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ge.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_gl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_gl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_he.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_he.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_hr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_hr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_hu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_hu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_hy_AM.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_hy_AM.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_hy_AM.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_hy_AM.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_hy_AM.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_id.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_id.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_is.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_is.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_it.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_it.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ja.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ja.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ka.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ka.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_kk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_kk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_kk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_kk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_kk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ko.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ko.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_lt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_lt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_lv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_lv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_my.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_my.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_nl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_nl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_no.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_no.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_pl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_pl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_pt_BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_pt_BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_pt_BR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_pt_BR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_pt_BR.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_pt_PT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_pt_PT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_pt_PT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_pt_PT.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_pt_PT.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ro.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ro.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_ru.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_ru.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_si.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_si.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_sk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_sk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_sl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_sl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_sr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_sr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_sr_lat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_sr_lat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_sr_lat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_sr_lat.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_sr_lat.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_sv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_sv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_th.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_th.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_tj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_tj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_tj.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_tj.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_tj.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_tr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_tr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_uk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_uk.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_vi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_vi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_zh.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_zh.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_zh_TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/messages_zh_TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_zh_TW.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/messages_zh_TW.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/messages_zh_TW.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/test/methods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/methods_de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/methods_de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/methods_de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/methods_de.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/methods_de.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/methods_es_CL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/methods_es_CL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/methods_es_CL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/methods_es_CL.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/methods_es_CL.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/methods_fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/methods_fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/methods_fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/methods_fi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/methods_fi.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/methods_nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/methods_nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/methods_nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/methods_nl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/methods_nl.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/methods_pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/localization/methods_pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/methods_pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/dist/localization/methods_pt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/localization/methods_pt.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/milk/milk.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/mktSignup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/mobileNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/mobileUK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/moderna.layout.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/morris-data-static.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.actividad.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.especie.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.investigador.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.resultado.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.resultado.pdf.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/emails/muestra.nueva.txt.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/muestra.pdf.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/muestras.canceladas.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/muestras.especie.pdf.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/muestras.investigador.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/muestras.investigador.pdf.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/muestras.procesando.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/multiselect.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/navigation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/analisismuestra/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/familia/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/genero/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/otramuestra/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/otrotipomuestra/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pasto/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pno/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/AnalisisMuestra/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/captcha/newsession.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/nieES.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/nifES.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/notEqualTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/nowhitespace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/nuevas.muestras.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/nutricion.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/overwrite.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Reportes/pasto.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/pasto.pdf.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Reportes/pasto.pdf.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/routing/pasto.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/pattern.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/phoneNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/phoneUK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/phoneUS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/phonesUK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/piwik.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/planificaciones.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/pno.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/postalCodeCA.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/postalcodeBR.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/postalcodeIT.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/postalcodeNL.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/postcodeUK.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/google-code-prettify/prettify.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/google-code-prettify/prettify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/captcha/process.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/test/qunit/qunit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/test/qunit/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/radio-checkbox-select-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/captcha/rand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/analisis/reactivo.editar.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/analisis/reactivo.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/recibir.muestra.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/login/register.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/lib/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/require_from_group.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/css/reset.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/resultados.especie.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/resultados.especie.pdf.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/resultados.investigador.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/resultados.investigador.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/resultados.investigador.pdf.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/test/rules.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/css/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/login/screen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/seleccionar.especie.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reportes/seleccionar.fecha.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/select.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/select2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/flexslider/setting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/portfolio/setting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/quicksand/setting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/analisismuestra/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/familia/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/genero/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/inventarioReactivo/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/otramuestra/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/otrotipomuestra/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pasto/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pno/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/AnalisisMuestra/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/site-demos.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/skip_or_fill_minimum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/statesUS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/step2.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/strippedminlength.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/captcha/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/multipart/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/stylesheet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/marketo/stylesheet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/default/tecnico.index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/themerollered.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/time.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/time12h.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/tinymce/tiny_mce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/demo/tinymce/themes/simple/skins/default/ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/url2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/emails/user_registration.txt.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/moderna/js/validate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/vinUS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/Documentation _ jQuery Validation Plugin_files/wp-emoji-release.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/zipcodeUS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/jquery-validation/src/additional/ziprange.js" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\LabControl\app\Resources\views\investigador.layout.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\LabControl\app\Resources\views\tecnico.layout.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\LabControl\src\AppBundle\Entity\Trabajo.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Analisis.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Analisis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/AnalisisController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/AnalisisController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/AnalisisMuestra.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/AnalisisMuestra.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/AnalisisType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/AnalisisType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Campo.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Campo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/CampoAnalisisValor.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/CampoAnalisisValor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/CampoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CampoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Doctorado.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Doctorado.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DoctoradoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DoctoradoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/DoctoradoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/DoctoradoType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/EntradaReactivo.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/EntradaReactivo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/EntradaReactivoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/EntradaReactivoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/EntradaReactivoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/EntradaReactivoType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Especie.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Especie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/EspecieController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/EspecieController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/EspecieType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/EspecieType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Experimento.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Experimento.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ExperimentoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ExperimentoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/ExperimentoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/ExperimentoType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Institucion.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Institucion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/InstitucionController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/InstitucionController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/InstitucionType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/InstitucionType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/InventarioReactivo.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/InventarioReactivo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Investigador.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Investigador.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/InvestigadorController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/InvestigadorController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/InvestigadorType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/InvestigadorType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Maestria.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Maestria.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MaestriaController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MaestriaController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/MaestriaType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/MaestriaType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Muestra.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Muestra.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MuestraController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MuestraController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/MuestraType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/MuestraType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ObjetivoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ObjetivoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Pais.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Pais.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/PaisController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PaisController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/PaisType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/PaisType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Proyecto.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Proyecto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ProyectoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ProyectoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/ProyectoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/ProyectoType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Reactivo.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Reactivo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ReactivoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ReactivoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/ReactivoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/ReactivoType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Role.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Role.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/SalidaReactivoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/SalidaReactivoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/SalidaReactivoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/SalidaReactivoType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/TecnicoLaboratorio.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/TecnicoLaboratorio.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TecnicoLaboratorioController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TecnicoLaboratorioController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/TecnicoLaboratorioType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/TecnicoLaboratorioType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Tratamiento.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Tratamiento.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TratamientoController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TratamientoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/TratamientoType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/TratamientoType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UsuarioController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UsuarioController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/analisis/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/analisis/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/campo/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/campo/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/doctorado/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/doctorado/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/entradaReactivo/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/entradaReactivo/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/especie/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/especie/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/experimento/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/experimento/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/institucion/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/institucion/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/investigador/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/investigador/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/maestria/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/maestria/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/muestra/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/pais/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/pais/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/proyecto/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/proyecto/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/reactivo/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/reactivo/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/salidaReactivo/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/salidaReactivo/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/tecnicoLaboratorio/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/tecnicoLaboratorio/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/analisis/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/analisis/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/campo/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/campo/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/doctorado/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/doctorado/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/entradaReactivo/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/entradaReactivo/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/especie/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/especie/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/experimento/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/experimento/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/institucion/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/institucion/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/investigador/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/investigador/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/maestria/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/maestria/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/muestra/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/pais/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/pais/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/proyecto/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/proyecto/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/reactivo/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/reactivo/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/salidaReactivo/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/salidaReactivo/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/tecnicoLaboratorio/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/tecnicoLaboratorio/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/morris-data.js" afterPath="$PROJECT_DIR$/web/js/morris-data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/analisis/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/analisis/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/campo/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/campo/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/doctorado/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/doctorado/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/entradaReactivo/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/entradaReactivo/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/especie/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/especie/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/experimento/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/experimento/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/institucion/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/institucion/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/investigador/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/investigador/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/maestria/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/maestria/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/muestra/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/pais/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/pais/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/proyecto/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/proyecto/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/reactivo/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/reactivo/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/salidaReactivo/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/salidaReactivo/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/tecnicoLaboratorio/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/tecnicoLaboratorio/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/css/sb-admin-2.css" afterPath="$PROJECT_DIR$/web/dist/css/sb-admin-2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/analisis/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/analisis/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/doctorado/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/doctorado/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/entradaReactivo/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/entradaReactivo/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/especie/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/especie/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/experimento/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/experimento/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/institucion/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/institucion/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/investigador/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/investigador/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/maestria/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/maestria/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/muestra/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/muestra/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/pais/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/pais/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/proyecto/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/proyecto/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/reactivo/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/reactivo/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/salidaReactivo/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/salidaReactivo/show.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/tecnicoLaboratorio/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/tecnicoLaboratorio/show.html.twig" />
+    </list>
+    <ignored path="LabControl.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="LabControl" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="FamiliaController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FamiliaController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44260356">
+              <caret line="52" column="102" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/familia/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="16" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="s doctrine:schema:update --force " />
+      <command text="s generate:doctrine:crud" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s generate:doctrine:crud" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:schema:update --force" />
+      <command text="doctrine:schema:update --force" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:crud " />
+      <command text="s cache:clear" />
+      <command text="s doctrine:generate:crud " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s cache:clear" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s cache:clear" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s debug:router prod" />
+      <command text="s debug:router config.yml" />
+      <command text="s router:debug" />
+      <command text="s cache:clear" />
+      <command text="s cache:clear prod" />
+      <command text="s cache:clear  env=prod" />
+      <command text="s cache:clear  -env=prod" />
+      <command text="s cache:clear  --env=prod" />
+    </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/Resources/views/tecnicoLaboratorio/edit.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/moderna.layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/AnalisisController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/PnoController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/pasto.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.resultado.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.actividad.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/seleccionar.fecha.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/pasto/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/PastoController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/AnalisisMuestraController.php" />
+        <option value="$PROJECT_DIR$/web/dist/css/sb-admin-2.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/analisis/edit.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/muestra/analisis.resultado.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/pno.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/analisis.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/nutricion.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/agronomicas.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/pasto.pdf.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/muestras.investigador.pdf.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/muestras.especie.pdf.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.especie.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/tecnico.index.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Muestra.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/planificaciones.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/PlanificacionCorteExperimentoController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/investigador.planificaciones.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/muestra/resultados.investigador.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/investigador.index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/muestra/muestras.investigador.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/MuestraController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/AnalisisMuestra.php" />
+        <option value="$PROJECT_DIR$/web/app_dev.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/muestra/muestra.pdf.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.investigador.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/resultados.investigador.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/resultados.investigador.pdf.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/ViewModel/EspecieViewType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/seleccionar.especie.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/ViewModel/EspecieView.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ReportesController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/reportes/resultados.especie.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/web/app.php" />
+        <option value="$PROJECT_DIR$/app/config/config_prod.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpUndefinedFieldInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ViewModel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="muestra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="familia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TwigBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LabControl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1- Software/PD" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.terminal.TerminalOptionsConfigurable" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\LabControl\app\Resources\views\reportes" />
+      <recent name="C:\xampp\htdocs\LabControl\src\AppBundle\ViewModel" />
+      <recent name="C:\xampp\htdocs\LabControl\app\Resources\views\muestra" />
+      <recent name="C:\xampp\htdocs\LabControl\app\Resources\views\planificacionCorteExperimento" />
+      <recent name="C:\xampp\htdocs\LabControl\app\Resources\TwigBundle\views\Exception" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\LabControl\app\Resources\views" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.AnalisisController.php">
+    <configuration default="false" name="index.html.twig" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" uri="http://localhost:63342/LabControl/app/Resources/views/default/index.html.twig">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AnalisisController.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" uri="http://localhost:63342/LabControl/AppBundle/Controller/AnalisisController.php">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html.twig" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.AnalisisController.php" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.AnalisisController.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html.twig" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db18dcc2-60f3-42fe-a1c2-377ad26726fa" name="Default" comment="" />
+      <created>1434965132594</created>
+      <option name="number" value="Default" />
+      <updated>1434965132594</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Ver 1.0 Gestion de laboratorio">
+      <created>1434969627151</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1434969627151</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ver 1.0.1 Permite la gestión de análisis">
+      <created>1437210946096</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1437210946096</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="3" />
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26066098" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32504147" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32753405" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3360927" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18527508" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33919156" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3192436" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3225256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900663" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ver 1.0 Gestion de laboratorio" />
+    <MESSAGE value="Ver 1.0.1 Permite la gestión de análisis" />
+    <MESSAGE value="Casi terminado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Casi terminado" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="10" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reportes/muestras.investigador.pdf.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.076923">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Especie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.8461537">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reportes/muestras.especie.pdf.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.92544377">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/admin.index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7767355">
+          <caret line="53" column="14" selection-start-line="45" selection-start-column="1" selection-end-line="53" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/InvestigadorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Investigador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.19136961">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/planificaciones.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8086304">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/planificacionCorteExperimento/investigador.planificaciones.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PlanificacionCorteExperimentoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6184211">
+          <caret line="265" column="28" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/tecnico.index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.923077">
+          <caret line="93" column="26" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Experimento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-49.576923">
+          <caret line="118" column="5" selection-start-line="97" selection-start-column="4" selection-end-line="118" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/PlanificacionCorteExperimento.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.67105263">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38345864">
+          <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/muestra/analisis.resultado.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03195489">
+          <caret line="115" column="142" selection-start-line="115" selection-start-column="142" selection-end-line="115" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/muestra/resultados.investigador.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7349624">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/investigador.index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39285713">
+          <caret line="70" column="65" selection-start-line="70" selection-start-column="65" selection-end-line="70" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/muestra/nuevas.muestras.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Muestra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="31" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/AnalisisMuestra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="232" column="48" selection-start-line="232" selection-start-column="48" selection-end-line="232" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48284024">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.resultado.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.384615">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/muestra/muestras.investigador.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.846153">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MuestraController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-52.076923">
+          <caret line="430" column="1" selection-start-line="430" selection-start-column="1" selection-end-line="430" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.especie.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="140" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reportes/muestra.agrupadas.investigador.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44312796">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/muestra/muestra.pdf.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.76923">
+          <caret line="44" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reportes/resultados.investigador.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reportes/resultados.investigador.pdf.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3021327">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/ViewModel/PastoViewType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="50" column="14" selection-start-line="43" selection-start-column="12" selection-end-line="50" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Pasto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78554505">
+          <caret line="66" column="5" selection-start-line="45" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/ViewModel/EspecieViewType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35545024">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reportes/seleccionar.especie.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8459716">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38270143">
+          <caret line="215" column="109" selection-start-line="215" selection-start-column="109" selection-end-line="215" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Programacion/Cosas Symfony/Ejemplos Symfony/proyecto vicedo/AppBundle/Entity/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6646919">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/ViewModel/EspecieView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38270143">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reportes/resultados.especie.pdf.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reportes/resultados.especie.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18127961">
+          <caret line="9" column="172" selection-start-line="9" selection-start-column="172" selection-end-line="9" selection-end-column="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ReportesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35545024">
+          <caret line="621" column="50" selection-start-line="621" selection-start-column="50" selection-end-line="621" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="86" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67066896">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23327616">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27517986">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10059172">
+          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15614237">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/familia/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="16" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FamiliaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44260356">
+          <caret line="52" column="102" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

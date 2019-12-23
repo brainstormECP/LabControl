@@ -1,0 +1,27 @@
+{% extends 'layout.html.twig' %}
+
+{% block content -%}
+    <h1>Lista de Procedimientos Normativos</h1>
+    <a class="btn btn-success" href="{{ path('pno_new') }}">Nuevo Procedimiento Normativo</a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Fichero</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.nombre }}</td>
+                <td><a class="btn btn-primary" href="{{ asset('uploads/pno/') }}{{ entity.imageName }}">Abrir fichero</a></td>
+                <td>
+                    <a class="btn btn-info" href="{{ path('pno_edit', { 'id': entity.Id }) }}">Editar</a>
+                    <a class="btn btn-danger" href="{{ path('pno_show', { 'id': entity.Id }) }}">Borrar</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'layout.html.twig' %}
+
+{% block aditionalStyle %}
+    <link rel="stylesheet" href="{{ asset('css/datatables.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mbs-qdtf.css') }}">
+{% endblock %}
+
+{% block content -%}
+    <h1>Muestras agrupadas por especie</h1>
+    <a class="btn btn-success" href="{{ path('especie_pdf', { 'fechaInicio': fechaInicio|date('d-m-Y'), 'fechaFin': fechaFin|date('d-m-Y') }) }}">Mostrar PDF</a>
+    {% for entity in entities %}
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Especie</th>
+                <th>Muestras</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{ entity }}</td>
+                <td>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Orden</th>
+                            <th>Estado</th>
+                            <th>Descripcion</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for m in entity.muestras %}
+                            <tr>
+                                <td>{{ m.noOrden }}</td>
+                                <td>{{ m.estado }}</td>
+                                <td>{{ m }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    {% endfor %}
+{% endblock %}
+
+{% block adicionalscripts %}
+    <script src="{{ asset('js/datatables.js') }}"></script>
+    <script src="{{ asset('js/mbs-qdtf.js') }}"></script>
+    <script src="{{ asset('js/pdfmake.js') }}"></script>
+    <script src="{{ asset('js/vfs_fonts.js') }}"></script>
+{% endblock %}

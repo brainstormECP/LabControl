@@ -1,4 +1,4 @@
-{% extends 'tecnico.layout.html.twig' %}
+{% extends 'layout.html.twig' %}
 
 {% block content -%}
     <div class="col-lg-12">
@@ -12,16 +12,23 @@
                         <div class="form-group">
                             <div class="col-md-7">
 
-                                {{ form_widget(edit_form.Nombre,{'attr':{ 'class':'form-control','placeholder':'Nombre' }}) }}
-                                {{ form_errors(edit_form.Nombre) }}
+                                {{ form_widget(edit_form.nombre,{'attr':{ 'class':'form-control','placeholder':'Nombre' }}) }}
+                                {{ form_errors(edit_form.nombre) }}
                             </div>
                         </div>
                         <div class="form-group">
-                            <h3>{{ form_label(edit_form.Campos) }}</h3>
                             <div class="col-md-7">
-                                <div class="campos" data-prototype="{{ form_widget(edit_form.Campos.vars.prototype)| e }}">
+                                {{ form_label(edit_form.imageFile) }}
+                                {{ form_widget(edit_form.imageFile,{'attr':{ 'class':'form-control','placeholder':'Nombre' }}) }}
+                                {{ form_errors(edit_form.imageFile) }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h3>{{ form_label(edit_form.campos) }}</h3>
+                            <div class="col-md-7">
+                                <div class="campos" data-prototype="{{ form_widget(edit_form.campos.vars.prototype)| e }}">
                                     {# iterate over each existing tag and render its only field: name #}
-                                    {% for campo in edit_form.Campos %}
+                                    {% for campo in edit_form.campos %}
                                         <div class="col-md-7">
                                             <div class="form-group input-group">
                                                 {{ form_widget(campo.Nombre,{'attr':{ 'class':'form-control' }}) }}
@@ -34,9 +41,9 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-7">
-                                {{ form_label(edit_form.Formula) }}
-                                {{ form_widget(edit_form.Formula,{'attr':{ 'class':'form-control' }}) }}
-                                {{ form_errors(edit_form.Formula) }}
+                                {{ form_label(edit_form.formula) }}
+                                {{ form_widget(edit_form.formula,{'attr':{ 'class':'form-control' }}) }}
+                                {{ form_errors(edit_form.formula) }}
                             </div>
                         </div>
                         <input type="submit" class="btn btn-success" value="Guardar">
@@ -50,7 +57,7 @@
 {% endblock %}
 
 
-{% block aditionalscripts %}
+{% block adicionalscripts %}
     <script>
         var collectionHolder;
 

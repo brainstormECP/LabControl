@@ -1,0 +1,167 @@
+{% extends 'layout.html.twig' %}
+
+{% block aditionalStyle %}
+    <!-- Custom Multiselect CSS -->
+    <link href="{{ asset('css/multiselect.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content -%}
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3>Adicionar Muestra</h3></div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-9">
+                        {{ form_start(edit_form, {'attr':{ 'class':'form-horizontal' }}) }}
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                {{ form_label(edit_form.noOrden) }}
+                                {{ form_widget(edit_form.noOrden,{'attr':{ 'class':'form-control' }}) }}
+                                {{ form_errors(edit_form.noOrden) }}
+                            </div>
+
+                            <div class="col-md-4">
+                                {{ form_label(edit_form.claveInterna) }}
+                                {{ form_widget(edit_form.claveInterna,{'attr':{ 'class':'form-control' }}) }}
+                                {{ form_errors(edit_form.claveInterna) }}
+                            </div>
+                            <div class="col-md-4">
+                                {{ form_label(edit_form.claveExterna) }}
+                                {{ form_widget(edit_form.claveExterna,{'attr':{ 'class':'form-control' }}) }}
+                                {{ form_errors(edit_form.claveExterna) }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div>
+                                    {{ form_label(edit_form.analisisMuestras) }}
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-info" id="ms_select">Seleccionar todo</button>
+                                    <button type="button" class="btn btn-info" id="ms_deselect">Deseleccionar todo
+                                    </button>
+                                </div>
+                                {{ form_widget(edit_form.analisisMuestras,{'attr':{ 'class':'form-control' }}) }}
+                                {{ form_errors(edit_form.analisisMuestras) }}
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Adicionar">
+                        <a href="{{ path('nuevas_muestras') }}" class="btn btn-default">Lista de muestras</a>
+                        {{ form_end(edit_form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block adicionalscripts %}
+    <script>
+        var collectionHolder;
+
+        // setup an "add a tag" link
+        var addTagLink = $('<a href="#" class="btn btn-success">Añadir Tratamiento</a>');
+        var newLinkLi = $('<div class="col-md-7" ></div>').append(addTagLink);
+        jQuery(document).ready(function () {
+            // Multiselect
+            if($("#ms").length > 0)
+                $("#ms").multiSelect({
+                    afterSelect: function(value, text){
+                        //action
+                    },
+                    afterDeselect: function(value, text){
+                        //action
+                    }});
+
+
+            if($("#appbundle_muestra_analisisMuestras").length > 0){
+                $("#appbundle_muestra_analisisMuestras").multiSelect({
+                    selectableHeader: "<div class='multipleselect-header'>Análisis a seleccionar</div>",
+                    selectedHeader: "<div class='multipleselect-header'>Análisis seleccionados</div>",
+                    afterSelect: function(value, text){
+                        //action
+                    },
+                    afterDeselect: function(value, text){
+                        //action
+                    }
+                });
+
+                $("#ms_select").click(function(){
+                    $('#appbundle_muestra_analisisMuestras').multiSelect('select_all');
+                });
+                $("#ms_deselect").click(function(){
+                    $('#appbundle_muestra_analisisMuestras').multiSelect('deselect_all');
+                });
+            }
+
+
+
+
+            // Get the ul that holds the collection of tags
+            collectionHolder = $('div.tratamientos');
+
+            // add a delete link to all of the existing tag form li elements
+            collectionHolder.find('div.form-group').each(function () {
+                addTagFormDeleteLink($(this));
+            });
+
+            // add the "add a tag" anchor and li to the tags ul
+            collectionHolder.append(newLinkLi);
+            // count the current form inputs we have (e.g. 2), use that as the new
+            // index when inserting a new item (e.g. 2)
+            collectionHolder.data('index', collectionHolder.find(':input').length);
+            addTagLink.on('click', function (e) {
+                // prevent the link from creating a "#" on the URL
+                e.preventDefault();
+                // add a new tag form (see next code block)
+                addTagForm(collectionHolder, newLinkLi);
+            });
+        });
+        function addTagForm(collectionHolder, newLinkLi) {
+            // Get the data-prototype explained earlier
+            var prototype = collectionHolder.data('prototype');
+            // get the new index
+            var index = collectionHolder.data('index');
+            // Replace '__name__' in the prototype's HTML to
+            // instead be a number based on how many items we have
+            var newForm = prototype.replace('<label for="appbundle_muestra_tratamientos___name___nombre" class="required">Nombre</label>', '');
+            newForm = newForm.replace('<label for="appbundle_muestra_tratamientos___name___descripcion" class="required">Descripcion</label>', '');
+            newForm = newForm.replace(/__name__/g, index);
+            newForm = newForm.replace(/<div /g, '<div class="form-group input-group" ');
+            newForm = newForm.replace('<input ', '<input class="form-control" ');
+
+
+            // increase the index with one for the next item
+            collectionHolder.data('index', index + 1);
+            // Display the form in the page in an li, before the "Add a tag" link li
+            var newFormLi = $('<div class="col-md-7"></div>').append(newForm);
+            newLinkLi.before(newFormLi);
+
+            // add a delete link to the new form
+            addTagFormDeleteLink(newFormLi.children());
+            addIdTratamiento(newFormLi.children().children().first(), index);
+
+        }
+
+        function addTagFormDeleteLink(tagFormLi) {
+            var removeFormA = $('<a href="#" class="input-group-addon btn btn-danger"><i class="fa fa-trash-o"/></a>');
+            tagFormLi.append(removeFormA);
+            removeFormA.on('click', function (e) {
+                // prevent the link from creating a "#" on the URL
+                e.preventDefault();
+                // remove the li for the tag form
+                tagFormLi.remove();
+            });
+        }
+
+        function addIdTratamiento(tagFormLi, index) {
+
+            var p = '<span class="input-group-addon">' + (index + 1) + '</span>'
+            var idTratamientoTag = $(p);
+            tagFormLi.before(idTratamientoTag);
+        }
+    </script>
+    <script src="{{ asset('js/embbeded-form.js') }}"></script>
+    <script src="{{ asset('js/jquery.multi-select.min.js') }}"></script>
+    <script src="{{ asset('js/plugins.js') }}"></script>
+{% endblock %}

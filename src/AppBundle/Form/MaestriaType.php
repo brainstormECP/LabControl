@@ -15,8 +15,8 @@ class MaestriaType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('Edicion')
-            ->add('Nombre')
+            ->add('edicion')
+            ->add('nombre')
         ;
     }
     

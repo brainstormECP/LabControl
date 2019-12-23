@@ -15,9 +15,7 @@ class TratamientoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('Nombre')
-            ->add('Descripcion')
-            ->add('Muestras')
+            ->add('descripcion')
         ;
     }
     

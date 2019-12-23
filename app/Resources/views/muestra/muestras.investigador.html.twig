@@ -1,0 +1,47 @@
+{% extends 'layout.html.twig' %}
+
+{% block content -%}
+    <h1>Lista de Muestras</h1>
+
+    {% for Message in app.session.flashbag.get('info') %}
+        <p class="alert alert-success">
+            <i class="fa fa-smile-o"></i>
+            {{ Message | raw }}
+        </p>
+    {% endfor %}
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Muestra</th>
+            <th>Experimento</th>
+            <th>Estado</th>
+            <th>Análisis pendientes</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity }}</td>
+                <td>{{ entity.experimento }}</td>
+                {% if(entity.estado == 'Enviada') %}
+                    <td><span class="label label-default">{{ entity.estado }}</span></td>
+                {% elseif (entity.estado == 'Recibida') %}
+                    <td><span class="label label-success">{{ entity.estado }}</span></td>
+                {% else %}
+                    <td><span class="label label-danger">{{ entity.estado }}</span></td>
+                {% endif %}
+                <td>{{ entity.AnalisisPendientes }}</td>
+                <td>
+                    <a class="btn btn-success" href="{{ path('pdf', { 'id': entity.Id }) }}">Mostrar PDF</a>|
+                    {% if(entity.estado == 'Recibida') %}
+                    <a class="btn btn-info" href="{{ path('resultados', { 'id': entity.Id }) }}">Resultados de
+                        Análisis</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'layout.html.twig' %}
+
+{% block content -%}
+    <h1>Investigadores</h1>
+
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-7">
+                <select class="form-control" id="investigadores">
+                    {% for investigador in investigadores %}
+                        <option id="investigador_{{ investigador.id }}">{{ investigador.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div id="planificacion_data">
+
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block adicionalscripts %}
+    <script>
+        $(document).ready(function () {
+            $('#planificacion_data').load('/labcontrol/web/app_dev.php/planificacioncorteexperimento/plan/' + $('#investigadores option:selected').attr('id').split('_')[1]);
+
+            $(document).on('change', '#investigadores', function () {
+                $('#planificacion_data').load('/labcontrol/web/app_dev.php/planificacioncorteexperimento/plan/' + $('#investigadores option:selected').attr('id').split('_')[1]);
+            })
+        });
+    </script>
+{% endblock %}

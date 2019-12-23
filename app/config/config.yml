@@ -78,3 +78,27 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+gregwar_captcha: ~
+
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        pno_doc:
+            uri_prefix:         /uploads/pno
+            upload_destination: %kernel.root_dir%/../web/uploads/pno
+        analisis_doc:
+            uri_prefix:         /uploads/descripcionAnalisis
+            upload_destination: %kernel.root_dir%/../web/uploads/descripcionAnalisis
+
+
+knp_snappy:
+    pdf:
+        enabled:    true
+        binary:     "\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe\""
+        options:    []
+    image:
+        enabled:    true
+        binary:     "\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltoimage.exe\""
+        options:    []

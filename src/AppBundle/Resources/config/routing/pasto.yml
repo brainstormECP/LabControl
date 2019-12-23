@@ -1,0 +1,30 @@
+pasto:
+    path:     /
+    defaults: { _controller: "AppBundle:Pasto:index" }
+
+pasto_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:Pasto:show" }
+
+pasto_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:Pasto:new" }
+
+pasto_create:
+    path:     /create
+    defaults: { _controller: "AppBundle:Pasto:create" }
+    methods:  POST
+
+pasto_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:Pasto:edit" }
+
+pasto_update:
+    path:     /{id}/update
+    defaults: { _controller: "AppBundle:Pasto:update" }
+    methods:  [POST, PUT]
+
+pasto_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:Pasto:delete" }
+    methods:  [POST, DELETE]

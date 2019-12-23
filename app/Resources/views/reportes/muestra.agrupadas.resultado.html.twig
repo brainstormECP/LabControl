@@ -1,0 +1,54 @@
+{% extends 'layout.html.twig' %}
+
+{% block aditionalStyle %}
+    <link rel="stylesheet" href="{{ asset('css/datatables.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mbs-qdtf.css') }}">
+{% endblock %}
+
+{% block content -%}
+    <h1>Muestras</h1>
+    <a class="btn btn-success" href="{{ path('resultados_pdf') }}">Mostrar PDF</a>
+    {% for entity in entities %}
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Muestras</th>
+                <th>Resultados de analisis</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{ entity }}</td>
+                <td>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Analisis</th>
+                            <th>Aprobado?</th>
+                            <th>Resultado</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for a in entity.analisisMuestras %}
+                            <tr>
+                                <td>{{ a.analisis }}</td>
+                                <td>{{ a.aprobado }}</td>
+                                <td>{{ a.resultado }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    {% endfor %}
+{% endblock %}
+
+{% block adicionalscripts %}
+    <script src="{{ asset('js/datatables.js') }}"></script>
+    <script src="{{ asset('js/mbs-qdtf.js') }}"></script>
+    <script src="{{ asset('js/pdfmake.js') }}"></script>
+    <script src="{{ asset('js/vfs_fonts.js') }}"></script>
+{% endblock %}

@@ -15,14 +15,15 @@ class AnalisisType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('Nombre')
-            ->add('Campos','collection',array(
+            ->add('nombre')
+            ->add('campos','collection',array(
                 'type' => new CampoType(),
                 'allow_add' => true,
                 'by_reference' => false,
                 'allow_delete' => true,
             ))
-            ->add('Formula')
+            ->add('formula')
+            ->add('imageFile','file')
         ;
     }
     

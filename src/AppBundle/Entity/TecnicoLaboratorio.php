@@ -9,6 +9,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * SalidaReactivo
@@ -62,5 +63,17 @@ class TecnicoLaboratorio extends User{
     public function getAnalisisMuestras()
     {
         return $this->analisisMuestras;
+    }
+
+    public function rolesToString(){
+        $ret = '';
+        foreach($this->getRoles() as $r){
+            $ret = $ret." ".$r;
+        }
+        return $ret;
+    }
+
+    public function __toString(){
+        return $this->getName();
     }
 }

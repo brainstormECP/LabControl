@@ -1,0 +1,133 @@
+--Compra de mercancias
+--DELETE
+
+BEGIN
+DECLARE msg varchar(255);
+IF (SELECT i.cantidad FROM inventario_mercancia AS i WHERE i.mercanciaId = OLD.mercanciaId AND i.precio = ROUND(OLD.precio/OLD.cantidad,2)) - OLD.cantidad >= 0 THEN
+UPDATE inventario_mercancia AS i SET i.cantidad = i.cantidad - OLD.cantidad WHERE i.mercanciaId = OLD.mercanciaId AND i.precio = ROUND(OLD.precio/OLD.cantidad,2);
+ELSE
+SET msg = 'Ya no existe en inventario la cantidad a eliminar';
+SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = msg; 
+END IF;
+END
+
+--UPDATE
+
+BEGIN
+IF NOT EXISTS(SELECT * FROM inventario_mercancia AS i WHERE i.mercanciaId = NEW.mercanciaId AND i.precio = ROUND(NEW.precio/NEW.cantidad,2)) THEN
+INSERT into inventario_mercancia VALUES (0,0,NEW.precio/NEW.cantidad,NEW.mercanciaId);
+END IF;
+UPDATE inventario_mercancia AS i SET i.cantidad = i.cantidad - OLD.cantidad WHERE i.mercanciaId = OLD.mercanciaId AND i.precio = ROUND(OLD.precio/OLD.cantidad,2);
+UPDATE inventario_mercancia AS i SET i.cantidad = i.cantidad + NEW.cantidad WHERE i.mercanciaId = NEW.mercanciaId AND i.precio = ROUND(NEW.precio/NEW.cantidad,2);
+END
+
+--INSERT
+
+BEGIN
+IF NOT EXISTS(SELECT * FROM inventario_mercancia AS i WHERE i.mercanciaId = NEW.mercanciaId AND i.precio = ROUND(NEW.precio/NEW.cantidad,2)) THEN
+INSERT into inventario_mercancia VALUES (0,NEW.cantidad,NEW.precio/NEW.cantidad,NEW.mercanciaId);
+ELSE
+UPDATE inventario_mercancia AS i SET i.cantidad = i.cantidad + NEW.cantidad WHERE i.mercanciaId = NEW.mercanciaId AND i.precio = ROUND(NEW.precio/NEW.cantidad,2);
+END IF;
+END
+
+--Compra de utiles
+--DELETE
+
+BEGIN
+DECLARE msg varchar(255);
+IF (SELECT i.cantidad FROM inventario_util AS i WHERE i.utilId = OLD.utilId AND i.precio = ROUND(OLD.precio/OLD.cantidad,2)) - OLD.cantidad >= 0 THEN
+UPDATE inventario_util AS i SET i.cantidad = i.cantidad - OLD.cantidad WHERE i.utilId = OLD.utilId AND i.precio = ROUND(OLD.precio/OLD.cantidad,2);
+ELSE
+SET msg = 'Ya no existe en inventario la cantidad a eliminar';
+SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = msg; 
+END IF;
+END
+
+--UPDATE
+
+BEGIN
+IF NOT EXISTS(SELECT * FROM inventario_util AS i WHERE i.utilId = NEW.utilId AND i.precio = ROUND(NEW.precio/NEW.cantidad,2)) THEN
+INSERT into inventario_util VALUES (0,0,NEW.precio/NEW.cantidad,NEW.utilId);
+END IF;
+UPDATE inventario_util AS i SET i.cantidad = i.cantidad - OLD.cantidad WHERE i.utilId = OLD.utilId AND i.precio = ROUND(OLD.precio/OLD.cantidad,2);
+UPDATE inventario_util AS i SET i.cantidad = i.cantidad + NEW.cantidad WHERE i.utilId = NEW.utilId AND i.precio = ROUND(NEW.precio/NEW.cantidad,2);
+END
+
+--INSERT
+
+BEGIN
+IF NOT EXISTS(SELECT * FROM inventario_util AS i WHERE i.utilId = NEW.utilId AND i.precio = ROUND(NEW.precio/NEW.cantidad,2)) THEN
+INSERT into inventario_util VALUES (0,NEW.cantidad,NEW.precio/NEW.cantidad,NEW.utilId);
+ELSE
+UPDATE inventario_util AS i SET i.cantidad = i.cantidad + NEW.cantidad WHERE i.utilId = NEW.utilId AND i.precio = ROUND(NEW.precio/NEW.cantidad,2);
+END IF;
+END 
+
+--Salida de mercancias
+--DELETE
+
+BEGIN
+UPDATE inventario_mercancia AS i SET i.cantidad = i.cantidad + OLD.cantidad WHERE i.id = OLD.inventarioMercanciaId;
+END
+
+--UPDATE
+
+BEGIN
+DECLARE msg varchar(255);
+IF OLD.inventarioMercanciaId = NEW.inventarioMercanciaId AND  ((SELECT i.cantidad FROM inventario_mercancia AS i WHERE i.id = NEW.inventarioMercanciaId) + OLD.cantidad - NEW.cantidad >= 0) THEN
+UPDATE inventario_mercancia AS i SET i.cantidad = i.cantidad + OLD.cantidad - NEW.cantidad WHERE i.id = NEW.inventarioMercanciaId;
+ELSE IF OLD.inventarioMercanciaId != NEW.inventarioMercanciaId AND ((SELECT i.cantidad FROM inventario_mercancia AS i WHERE i.id = NEW.inventarioMercanciaId) - NEW.cantidad >= 0) THEN
+UPDATE inventario_mercancia AS i SET i.cantidad = i.cantidad - NEW.cantidad WHERE i.id = NEW.inventarioMercanciaId;
+UPDATE inventario_mercancia AS i SET i.cantidad = i.cantidad + OLD.cantidad WHERE i.id = OLD.inventarioMercanciaId;
+ELSE
+SET msg = 'No existe en inventario la cantidad a sacar';
+SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = msg; 
+END IF;
+END IF;
+END
+
+--INSERT
+
+BEGIN
+IF ((SELECT i.cantidad FROM inventario_mercancia AS i WHERE i.id = NEW.inventarioMercanciaId) - NEW.cantidad >= 0) THEN
+UPDATE inventario_mercancia AS i SET i.cantidad = i.cantidad - NEW.cantidad WHERE i.id = NEW.inventarioMercanciaId;
+ELSE 
+SET msg = 'No existe en inventario la cantidad a sacar';
+SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = msg; 
+END IF;
+END
+
+--Salida de utiles
+--DELETE
+
+BEGIN
+UPDATE inventario_util AS i SET i.cantidad = i.cantidad + OLD.cantidad WHERE i.id = OLD.inventarioUtilId;
+END
+
+--UPDATE
+
+BEGIN
+DECLARE msg varchar(255);
+IF OLD.inventarioUtilId = NEW.inventarioUtilId AND  ((SELECT i.cantidad FROM inventario_util AS i WHERE i.id = NEW.inventarioUtilId) + OLD.cantidad - NEW.cantidad >= 0) THEN
+UPDATE inventario_util AS i SET i.cantidad = i.cantidad + OLD.cantidad - NEW.cantidad WHERE i.id = NEW.inventarioUtilId;
+ELSE IF OLD.inventarioUtilId != NEW.inventarioUtilId AND ((SELECT i.cantidad FROM inventario_util AS i WHERE i.id = NEW.inventarioUtilId) - NEW.cantidad >= 0)  THEN
+UPDATE inventario_util AS i SET i.cantidad = i.cantidad - NEW.cantidad WHERE i.id = NEW.inventarioUtilId;
+UPDATE inventario_util AS i SET i.cantidad = i.cantidad + OLD.cantidad WHERE i.id = OLD.inventarioUtilId;
+ELSE
+SET msg = 'No existe en inventario la cantidad a sacar';
+SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = msg; 
+END IF;
+END IF;
+END
+
+--INSERT
+
+BEGIN
+IF ((SELECT i.cantidad FROM inventario_util AS i WHERE i.id = NEW.inventarioUtilId) - NEW.cantidad >= 0) THEN
+UPDATE inventario_util AS i SET i.cantidad = i.cantidad - NEW.cantidad WHERE i.id = NEW.inventarioUtilId;
+ELSE 
+SET msg = 'No existe en inventario la cantidad a sacar';
+SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = msg; 
+END IF;
+END

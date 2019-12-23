@@ -1,0 +1,87 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Elvis
+ * Date: 08/07/2015
+ * Time: 10:01:PM
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
+/**
+ * SalidaReactivo
+ *
+ * @ORM\Table(name="investigador")
+ * @ORM\Entity
+ */
+class Investigador extends User {
+
+    /**
+     * @ORM\OneToMany(targetEntity="Experimento", mappedBy="investigador")
+     */
+    protected $experimentos;
+
+    /**
+     * @var institucion
+     * @ORM\ManyToOne(targetEntity="Institucion", inversedBy="investigadores")
+     * @ORM\JoinColumn(name="institucionId", referencedColumnName="id")
+     */
+    protected $institucion;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->experimentos = new ArrayCollection();
+    }
+
+
+    /**
+     * Add Experimentos
+     *
+     * @param \AppBundle\Entity\Experimento $experimentos
+     * @return Investigador
+     */
+    public function addExperimento(\AppBundle\Entity\Experimento $experimentos)
+    {
+        $this->experimentos[] = $experimentos;
+
+        return $this;
+    }
+
+    /**
+     * Remove Experimentos
+     *
+     * @param \AppBundle\Entity\Experimento $experimentos
+     */
+    public function removeExperimento(\AppBundle\Entity\Experimento $experimentos)
+    {
+        $this->experimentos->removeElement($experimentos);
+    }
+
+    /**
+     * Get Experimentos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getExperimentos()
+    {
+        return $this->experimentos;
+    }
+
+    public function rolesToString(){
+        $ret = '';
+        foreach($this->getRoles() as $r){
+            $ret = $ret." ".$r;
+        }
+        return $ret;
+    }
+
+    public function __toString(){
+        return $this->getName();
+    }
+}

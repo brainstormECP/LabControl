@@ -1,0 +1,45 @@
+<?php
+
+namespace AppBundle\Form;
+
+use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+
+class PlanificacionCorteExperimentoType extends AbstractType
+{
+    /**
+     * @param FormBuilderInterface $builder
+     * @param array $options
+     */
+    public function buildForm(FormBuilderInterface $builder, array $options)
+    {
+        $builder
+            ->add('fecha', 'date', array(
+                'input' => 'datetime',
+                'widget' => 'single_text',
+                'format' => 'dd/MM/yyyy'
+            ))
+            ->add('descripcion')
+            ->add('experimento')
+        ;
+    }
+    
+    /**
+     * @param OptionsResolverInterface $resolver
+     */
+    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    {
+        $resolver->setDefaults(array(
+            'data_class' => 'AppBundle\Entity\PlanificacionCorteExperimento'
+        ));
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return 'appbundle_planificacioncorteexperimento';
+    }
+}

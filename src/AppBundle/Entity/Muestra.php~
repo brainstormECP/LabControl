@@ -1,0 +1,234 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Elvis
+ * Date: 07/07/2015
+ * Time: 16:22
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Table(name="muestra")
+ * @ORM\Entity()
+ */
+class Muestra {
+
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $Id;
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    protected $NoOrden;
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    protected $ClaveInterna;
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    protected $ClaveExterna;
+
+    /**
+     * @var Experimento
+     * @ORM\ManyToOne(targetEntity="Experimento", inversedBy="Muestras")
+     * @ORM\JoinColumn(name="ExperimentoId", referencedColumnName="Id")
+     */
+    protected $Experimento;
+
+    /**
+     * @var Tratamiento[]
+     * @ORM\ManyToMany(targetEntity="Tratamiento", mappedBy="Muestras")
+     */
+    protected $Tratamientos;
+
+    /**
+     * @var AnalisisMuestra[]
+     * @ORM\ManyToMany(targetEntity="AnalisisMuestra", mappedBy="Muestras")
+     */
+    protected $AnalisisMuestras;
+
+    /**
+     * @var Especie
+     * @ORM\ManyToOne(targetEntity="Especie", inversedBy="Muestras")
+     * @ORM\JoinColumn(name="EspecieId", referencedColumnName="Id")
+     */
+    protected $Especie;
+
+    public function __construct(){
+        $this->Tratamientos = new ArrayCollection();
+        $this->AnalisisMuestras = new ArrayCollection();
+    }
+
+
+    /**
+     * Get Id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->Id;
+    }
+
+    /**
+     * Set NoOrden
+     *
+     * @param string $noOrden
+     * @return Muestra
+     */
+    public function setNoOrden($noOrden)
+    {
+        $this->NoOrden = $noOrden;
+
+        return $this;
+    }
+
+    /**
+     * Get NoOrden
+     *
+     * @return string 
+     */
+    public function getNoOrden()
+    {
+        return $this->NoOrden;
+    }
+
+    /**
+     * Set ClaveInterna
+     *
+     * @param string $claveInterna
+     * @return Muestra
+     */
+    public function setClaveInterna($claveInterna)
+    {
+        $this->ClaveInterna = $claveInterna;
+
+        return $this;
+    }
+
+    /**
+     * Get ClaveInterna
+     *
+     * @return string 
+     */
+    public function getClaveInterna()
+    {
+        return $this->ClaveInterna;
+    }
+
+    /**
+     * Set ClaveExterna
+     *
+     * @param string $claveExterna
+     * @return Muestra
+     */
+    public function setClaveExterna($claveExterna)
+    {
+        $this->ClaveExterna = $claveExterna;
+
+        return $this;
+    }
+
+    /**
+     * Get ClaveExterna
+     *
+     * @return string 
+     */
+    public function getClaveExterna()
+    {
+        return $this->ClaveExterna;
+    }
+
+    /**
+     * Set Experimento
+     *
+     * @param \AppBundle\Entity\Experimento $experimento
+     * @return Muestra
+     */
+    public function setExperimento(\AppBundle\Entity\Experimento $experimento = null)
+    {
+        $this->Experimento = $experimento;
+
+        return $this;
+    }
+
+    /**
+     * Get Experimento
+     *
+     * @return \AppBundle\Entity\Experimento 
+     */
+    public function getExperimento()
+    {
+        return $this->Experimento;
+    }
+
+    /**
+     * Add Tratamientos
+     *
+     * @param \AppBundle\Entity\Tratamiento $tratamientos
+     * @return Muestra
+     */
+    public function addTratamiento(\AppBundle\Entity\Tratamiento $tratamientos)
+    {
+        $this->Tratamientos[] = $tratamientos;
+
+        return $this;
+    }
+
+    /**
+     * Remove Tratamientos
+     *
+     * @param \AppBundle\Entity\Tratamiento $tratamientos
+     */
+    public function removeTratamiento(\AppBundle\Entity\Tratamiento $tratamientos)
+    {
+        $this->Tratamientos->removeElement($tratamientos);
+    }
+
+    /**
+     * Get Tratamientos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getTratamientos()
+    {
+        return $this->Tratamientos;
+    }
+
+    /**
+     * Set Especie
+     *
+     * @param \AppBundle\Entity\Especie $especie
+     * @return Muestra
+     */
+    public function setEspecie(\AppBundle\Entity\Especie $especie = null)
+    {
+        $this->Especie = $especie;
+
+        return $this;
+    }
+
+    /**
+     * Get Especie
+     *
+     * @return \AppBundle\Entity\Especie 
+     */
+    public function getEspecie()
+    {
+        return $this->Especie;
+    }
+}

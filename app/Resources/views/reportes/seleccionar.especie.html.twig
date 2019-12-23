@@ -1,0 +1,52 @@
+{% extends 'layout.html.twig' %}
+
+
+{% block content -%}
+    <h1>Seleccione la fecha</h1>
+    {{ form_start(form, {'attr':{ 'class':'form-horizontal' }}) }}
+    <div class="form-group">
+        <div class="col-md-4">
+            {{ form_widget(form.fechaInicio,{'attr':{ 'class':'form-control' }}) }}
+            {{ form_errors(form.fechaInicio) }}
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            {{ form_widget(form.fechaFin,{'attr':{ 'class':'form-control' }}) }}
+            {{ form_errors(form.fechaFin) }}
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            {{ form_widget(form.especie,{'attr':{ 'class':'form-control' }}) }}
+            {{ form_errors(form.especie) }}
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-7">
+            <input type="submit" class="btn btn-success" value="Buscar">
+        </div>
+    </div>
+    {{ form_end(form) }}
+{% endblock %}
+
+{% block adicionalscripts %}
+    <script>
+        $(document).ready(function () {
+            $("#especie_fechaInicio").datepicker({
+                dateFormat: "dd/mm/yy",
+                monthNames: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+                    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+                monthNamesShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+                dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"]
+            });
+            $("#especie_fechaFin").datepicker({
+                dateFormat: "dd/mm/yy",
+                monthNames: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+                    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+                monthNamesShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+                dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"]
+            });
+        });
+    </script>
+{% endblock %}

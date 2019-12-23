@@ -1,41 +1,45 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
-    <h1>Reactivo list</h1>
-
-    <table class="records_list">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for entity in entities %}
-            <tr>
-                <td><a href="{{ path('reactivo_show', { 'id': entity.Id }) }}">{{ entity.Id }}</a></td>
-                <td>{{ entity.Nombre }}</td>
-                <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('reactivo_show', { 'id': entity.Id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('reactivo_edit', { 'id': entity.Id }) }}">edit</a>
-                    </li>
-                </ul>
-                </td>
-            </tr>
+{% block content -%}
+    <div class="col-lg-12">
+        <h1>Lista de Reactivos</h1>
+        {% for Message in app.session.flashbag.get('info') %}
+            <p class="alert alert-success">
+                <i class="fa fa-smile-o"></i>
+                {{ Message | raw }}
+            </p>
         {% endfor %}
-        </tbody>
-    </table>
+        <div class="panel panel-default">
+            <div class="panel-heading"><a href="{{ path('reactivo_new') }}" class="btn btn-success">Nuevo
+                    Reactivo</a></div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
 
-        <ul>
-        <li>
-            <a href="{{ path('reactivo_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
-    {% endblock %}
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Acciones</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for entity in entities %}
+                                <tr>
+                                    <td>{{ entity.Nombre }}</td>
+                                    <td>
+                                        <a class="btn btn-info"
+                                           href="{{ path('reactivo_edit', { 'id': entity.Id }) }}">Editar</a>|
+                                        <a class="btn btn-danger"
+                                           href="{{ path('reactivo_show', { 'id': entity.Id }) }}">Eliminar</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

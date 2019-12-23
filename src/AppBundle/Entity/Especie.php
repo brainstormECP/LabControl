@@ -25,20 +25,31 @@ class Especie {
     protected $id;
 
     /**
+     * @var genero
+     * @ORM\ManyToOne(targetEntity="Genero", inversedBy="especies")
+     * @ORM\JoinColumn(name="generoId", referencedColumnName="id")
+     */
+    protected $genero;
+
+    /**
      * @var string
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", unique=true)
      */
     protected $nombre;
 
 
     /**
      * @var muestra[]
-     * @ORM\OneToMany(targetEntity="Muestra", mappedBy="especie")
+     * @ORM\OneToMany(targetEntity="Pasto", mappedBy="especie")
      */
     protected $muestras;
 
     public function __construct(){
         $this->muestras = new ArrayCollection();
+    }
+
+    public function __toString(){
+        return $this->getGenero().' '.$this->getNombre();
     }
 
 
@@ -51,6 +62,30 @@ class Especie {
     {
         return $this->id;
     }
+
+    /**
+     * Set Genero
+     *
+     * @param \AppBundle\Entity\Genero $genero
+     * @return Especie
+     */
+    public function setGenero(\AppBundle\Entity\Genero $genero = null)
+    {
+        $this->genero = $genero;
+
+        return $this;
+    }
+
+    /**
+     * Get Genero
+     *
+     * @return \AppBundle\Entity\Genero
+     */
+    public function getGenero()
+    {
+        return $this->genero;
+    }
+
 
     /**
      * Set Nombre
@@ -78,10 +113,10 @@ class Especie {
     /**
      * Add Muestras
      *
-     * @param \AppBundle\Entity\Muestra $muestras
+     * @param \AppBundle\Entity\Pasto $muestras
      * @return Especie
      */
-    public function addMuestra(\AppBundle\Entity\Muestra $muestras)
+    public function addMuestra(\AppBundle\Entity\Pasto $muestras)
     {
         $this->muestras[] = $muestras;
 
@@ -91,9 +126,9 @@ class Especie {
     /**
      * Remove Muestras
      *
-     * @param \AppBundle\Entity\Muestra $muestras
+     * @param \AppBundle\Entity\Pasto $muestras
      */
-    public function removeMuestra(\AppBundle\Entity\Muestra $muestras)
+    public function removeMuestra(\AppBundle\Entity\Pasto $muestras)
     {
         $this->muestras->removeElement($muestras);
     }

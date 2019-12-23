@@ -1,51 +1,53 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
-    <h1>Investigador list</h1>
-
-    <table class="records_list">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Username</th>
-                <th>Password</th>
-                <th>Email</th>
-                <th>Isactive</th>
-                <th>Name</th>
-                <th>Activationtoken</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for entity in entities %}
-            <tr>
-                <td><a href="{{ path('investigador_show', { 'id': entity.Id }) }}">{{ entity.Id }}</a></td>
-                <td>{{ entity.UserName }}</td>
-                <td>{{ entity.Password }}</td>
-                <td>{{ entity.Email }}</td>
-                <td>{{ entity.IsActive }}</td>
-                <td>{{ entity.Name }}</td>
-                <td>{{ entity.ActivationToken }}</td>
-                <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('investigador_show', { 'id': entity.Id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('investigador_edit', { 'id': entity.Id }) }}">edit</a>
-                    </li>
-                </ul>
-                </td>
-            </tr>
+{% block content -%}
+    <div class="col-lg-12">
+        <h1>Lista de Investigadores</h1>
+        {% for Message in app.session.flashbag.get('info') %}
+            <p class="alert alert-success">
+                <i class="fa fa-smile-o"></i>
+                {{ Message | raw }}
+            </p>
         {% endfor %}
-        </tbody>
-    </table>
+        <div class="panel panel-default">
+            <div class="panel-heading"> <a href="{{ path('investigador_new') }}" class="btn btn-success">Nuevo Investigador</a> </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
 
-        <ul>
-        <li>
-            <a href="{{ path('investigador_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
-    {% endblock %}
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Nombre y Apellidos</th>
+                                <th>Nombre de usuario</th>
+                                <th>Correo electrónico</th>
+                                <th>Rol</th>
+                                <th>Activo?</th>
+                                <th>Acciones</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for entity in entities %}
+                                <tr>
+                                    <td>{{ entity.Name }}</td>
+                                    <td>{{ entity.UserName }}</td>
+                                    <td>{{ entity.Email }}</td>
+                                    <td>{{ entity.RolesToString }}</td>
+                                    <td>{{ entity.IsActive }}</td>
+                                    <td>
+                                        <a class="btn btn-info" href="{{ path('investigador_edit', { 'id': entity.Id }) }}">Editar</a>|
+                                        <a class="btn btn-danger" href="{{ path('investigador_show', { 'id': entity.Id }) }}">Eliminar</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

@@ -15,13 +15,11 @@ class TecnicoLaboratorioType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('UserName')
-            ->add('Password')
-            ->add('Email')
-            ->add('IsActive')
-            ->add('Name')
-            ->add('ActivationToken')
-            ->add('Roles')
+            ->add('name')
+            ->add('username')
+            ->add('password','password')
+            ->add('email')
+            ->add('isActive')
         ;
     }
     

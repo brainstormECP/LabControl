@@ -1,0 +1,108 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Elvis
+ * Date: 07/07/2015
+ * Time: 16:25
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Table(name="pais")
+ * @ORM\Entity()
+ */
+class Pais {
+
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $Id;
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    protected $Nombre;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Institucion", mappedBy="Pais")
+     */
+    protected $Instituciones;
+
+    public function __construct(){
+        $this->Instituciones = new ArrayCollection();
+    }
+
+
+    /**
+     * Get Id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->Id;
+    }
+
+    /**
+     * Set Nombre
+     *
+     * @param string $nombre
+     * @return Pais
+     */
+    public function setNombre($nombre)
+    {
+        $this->Nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get Nombre
+     *
+     * @return string 
+     */
+    public function getNombre()
+    {
+        return $this->Nombre;
+    }
+
+    /**
+     * Add Instituciones
+     *
+     * @param \AppBundle\Entity\Institucion $instituciones
+     * @return Pais
+     */
+    public function addInstitucione(\AppBundle\Entity\Institucion $instituciones)
+    {
+        $this->Instituciones[] = $instituciones;
+
+        return $this;
+    }
+
+    /**
+     * Remove Instituciones
+     *
+     * @param \AppBundle\Entity\Institucion $instituciones
+     */
+    public function removeInstitucione(\AppBundle\Entity\Institucion $instituciones)
+    {
+        $this->Instituciones->removeElement($instituciones);
+    }
+
+    /**
+     * Get Instituciones
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getInstituciones()
+    {
+        return $this->Instituciones;
+    }
+}

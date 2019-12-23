@@ -15,8 +15,8 @@ class DoctoradoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('Especialidad')
-            ->add('Nombre')
+            ->add('especialidad')
+            ->add('nombre')
         ;
     }
     

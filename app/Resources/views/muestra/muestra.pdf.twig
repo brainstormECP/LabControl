@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+<h1>Modelo de entrega de la muestra al laboratorio</h1>
+
+<div class="container">
+    <div class="row">
+        <p><strong> Título del experimento:</strong> {{ muestra.experimento }}</p>
+        <p><strong> Número de orden:</strong> {{ muestra.experimento }}</p>
+        <p><strong>Muestra: </strong>  {{ muestra }}</p>
+        <p><strong>Investigador: </strong>  {{ muestra.investigador }}</p>
+        <h2>Tratamientos:</h2>
+        <ol>
+            {% for tratamiento in muestra.tratamientos %}
+                <li>{{ tratamiento }}</li>
+            {% endfor %}
+        </ol>
+
+        <h3>Claves:</h3>
+        <p>Interna: {{ muestra.claveInterna }}</p>
+        <p>Externa: {{ muestra.claveExterna }}</p>
+        <h3>Analisis solicitados</h3>
+        <ul>
+            {% for analisis in muestra.analisisMuestras %}
+                <li>{{ analisis }}</li>
+            {% endfor %}
+        </ul>
+
+        <table>
+            <thead>
+            <tr>
+                <th>____________________________</th>
+                <th>         </th>
+                <th>____________________________</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>Entrega</td>
+                <td>       </td>
+                <td>Recibe</td>
+            </tr>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

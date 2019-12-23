@@ -1,0 +1,106 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Información del laboratorio</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class=""></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{ app.session.get('procesando') }}</div>
+                            <div>Muestras procesadas</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ path('muestras_en_proceso') }}">
+                    <div class="panel-footer">
+                        <span class="pull-left">Ver detalles</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-green">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class=""></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{ app.session.get('nuevas') }}</div>
+                            <div>Muestras nuevas</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ path('nuevas_muestras') }}">
+                    <div class="panel-footer">
+                        <span class="pull-left">Ver detalles</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-yellow">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class=""></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{ app.session.get('canceladas') }}</div>
+                            <div>Muestras canceladas</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ path('muestras_canceladas') }}">
+                    <div class="panel-footer">
+                        <span class="pull-left">Ver detalles</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-red">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class=""></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{ misanalisis }}</div>
+                            <div>Análisis realizados</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="panel-footer">
+                        <span class="pull-left">Ver detalles</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+{% endblock %}

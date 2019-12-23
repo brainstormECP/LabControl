@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/app/Resources/views/doctorado/index.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/doctorado/show.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/genero/index.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/genero/new.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/institucion/edit.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/institucion/index.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/institucion/new.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/institucion/show.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/login/institucion.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/muestra/muestra.pdf.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/pais/edit.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/pais/index.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/pais/new.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/pais/show.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Resources/views/pasto/new.html.twig" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/AppBundle/Controller/AnalisisController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/AppBundle/Controller/ReportesController.php" charset="UTF-8" />
+  </component>
 </project>
-

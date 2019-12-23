@@ -1,36 +1,27 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
-    <h1>EntradaReactivo</h1>
+{% block content -%}
+    <h1>Entrada de Reactivo</h1>
 
     <table class="record_properties">
         <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ entity.Id }}</td>
-            </tr>
-            <tr>
-                <th>Fecha</th>
-                <td>{{ entity.Fecha|date('Y-m-d H:i:s') }}</td>
-            </tr>
-            <tr>
-                <th>Cantidad</th>
-                <td>{{ entity.Cantidad }}</td>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.Id }}</td>
+        </tr>
+        <tr>
+            <th>Fecha</th>
+            <td>{{ entity.Fecha|date('d/m/Y') }}</td>
+        </tr>
+        <tr>
+            <th>Cantidad</th>
+            <td>{{ entity.Cantidad }}</td>
+        </tr>
         </tbody>
     </table>
-
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('entradareactivo') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('entradareactivo_edit', { 'id': entity.Id }) }}">
-            Edit
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+    <div class="form-group">
+        <a class="btn btn-default" href="{{ path('entradareactivo') }}">Lista de Entradas de Reactivos</a>
+        {{ form(delete_form) }}
+    </div>
 {% endblock %}
+

@@ -1,0 +1,32 @@
+{% extends 'layout.html.twig' %}
+
+{% block content -%}
+    <h1>Lista de Muestras</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Muestra</th>
+            <th>Experimento</th>
+            <th>Investigador</th>
+            <th>Cantidad de análisis</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity }}</td>
+                <td>{{ entity.experimento }}</td>
+                <td>{{ entity.experimento.investigador }}</td>
+                <td>{{ entity.AnalisisPendientes }}</td>
+                <td>{{ entity.estado }}</td>
+                <td>
+                    <a class="btn btn-info" href="{{ path('muestra_analisis', { 'id': entity.Id }) }}">Resultados de Análisis</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

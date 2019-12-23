@@ -1,6 +1,6 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
+{% block content -%}
     <h1>Reactivo</h1>
 
     <table class="record_properties">
@@ -15,18 +15,8 @@
             </tr>
         </tbody>
     </table>
-
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('reactivo') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('reactivo_edit', { 'id': entity.Id }) }}">
-            Edit
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+    <div class="form-group">
+        <a class="btn btn-default" href="{{ path('reactivo') }}">Lista de Reactivos</a>
+        {{ form(delete_form) }}
+    </div>
 {% endblock %}

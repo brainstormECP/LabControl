@@ -14,13 +14,17 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="maestria")
  * @ORM\Entity()
  */
-class Maestria extends Trabajo{
+class Maestria extends ActividadCientifica{
 
     /**
      * @var string
      * @ORM\Column(type="string")
      */
     protected $edicion;
+
+    public function __toString(){
+        return 'Maestría ('.$this->getNombre().' - Edición: '.$this->getEdicion().')';
+    }
 
     /**
      * Set Edicion

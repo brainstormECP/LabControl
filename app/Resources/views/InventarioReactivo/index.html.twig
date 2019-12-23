@@ -1,0 +1,21 @@
+{% extends 'layout.html.twig' %}
+
+{% block content -%}
+    <h1>Inventarios de Reactivos</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Reactivo</th>
+            <th>Existencia</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.reactivo }}</td>
+                <td>{{ entity.cantidad }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

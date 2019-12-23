@@ -32,6 +32,12 @@ class Campo {
     protected $nombre;
 
     /**
+     * @var string
+     * @ORM\Column(type="string", nullable=true)
+     */
+    protected $abreviatura;
+
+    /**
      * @var analisis
      * @ORM\ManyToOne(targetEntity="Analisis",inversedBy="campos")
      * @ORM\JoinColumn(name="analisisId",referencedColumnName="id")
@@ -46,6 +52,10 @@ class Campo {
 
     public function __construct(){
         $this->campoAnalisisValores = new ArrayCollection();
+    }
+
+    public function __toString(){
+        return $this->getNombre();
     }
 
     /**
@@ -79,6 +89,29 @@ class Campo {
     public function getNombre()
     {
         return $this->nombre;
+    }
+
+    /**
+     * Set Nombre
+     *
+     * @param string $abreviatura
+     * @return Campo
+     */
+    public function setAbreviatura($abreviatura)
+    {
+        $this->abreviatura = $abreviatura;
+
+        return $this;
+    }
+
+    /**
+     * Get Nombre
+     *
+     * @return string
+     */
+    public function getAbreviatura()
+    {
+        return $this->abreviatura;
     }
 
     /**

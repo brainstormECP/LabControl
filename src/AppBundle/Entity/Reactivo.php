@@ -26,7 +26,7 @@ class Reactivo {
 
     /**
      * @var string
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", unique=true)
      */
     protected $nombre;
 
@@ -36,6 +36,11 @@ class Reactivo {
     protected $inventarioReactivos;
 
     /**
+     * @ORM\OneToMany(targetEntity="EntradaReactivo", mappedBy="reactivo")
+     */
+    protected $entradas;
+
+    /**
      * @ORM\OneToMany(targetEntity="AnalisisReactivo", mappedBy="reactivo")
      */
     protected $analisisReactivos;
@@ -43,6 +48,7 @@ class Reactivo {
     public function __construct(){
         $this->analisisReactivos = new ArrayCollection();
         $this->inventarioReactivos = new ArrayCollection();
+        $this->entradas = new ArrayCollection();
     }
 
 
@@ -143,5 +149,42 @@ class Reactivo {
     public function getAnalisisReactivos()
     {
         return $this->analisisReactivos;
+    }
+
+    /**
+     * Add Entradas
+     *
+     * @param \AppBundle\Entity\EntradaReactivo $entradas
+     * @return Reactivo
+     */
+    public function addEntrada(\AppBundle\Entity\EntradaReactivo $entradas)
+    {
+        $this->entradas[] = $entradas;
+
+        return $this;
+    }
+
+    /**
+     * Remove Entradas
+     *
+     * @param \AppBundle\Entity\EntradaReactivo $entradas
+     */
+    public function removeEntrada(\AppBundle\Entity\EntradaReactivo $entradas)
+    {
+        $this->entradas->removeElement($entradas);
+    }
+
+    /**
+     * Get Entradas
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getEntradas()
+    {
+        return $this->entradas;
+    }
+
+    public function __toString(){
+        return $this->getNombre();
     }
 }

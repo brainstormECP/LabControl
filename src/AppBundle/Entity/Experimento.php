@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Table(name="experimento")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\ExperimentoRepository")
  */
 class Experimento {
 
@@ -26,19 +26,19 @@ class Experimento {
 
     /**
      * @var \DateTime
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="date")
      */
     protected $fechaInicio;
 
     /**
      * @var \DateTime
-     * @ORM\Column(type="datetime")
+     * @ORM\Column(type="date",nullable=true )
      */
     protected $fechaFin;
 
     /**
      * @var string
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string",nullable=true)
      */
     protected $observaciones;
 
@@ -50,16 +50,21 @@ class Experimento {
     protected $investigador;
 
     /**
-     * @var trabajo
-     * @ORM\ManyToOne(targetEntity="Trabajo", inversedBy="experimentos")
-     * @ORM\JoinColumn(name="trabajoId", referencedColumnName="id")
+     * @var actividadCientifica
+     * @ORM\ManyToOne(targetEntity="ActividadCientifica", inversedBy="experimentos")
+     * @ORM\JoinColumn(name="actividadCientificaId", referencedColumnName="id")
      */
-    protected $trabajo;
+    protected $actividadCientifica;
 
     /**
      * @ORM\OneToMany(targetEntity="Objetivo", mappedBy="experimento")
      */
     protected $objetivos;
+
+    /**
+     * @ORM\OneToMany(targetEntity="PlanificacionCorteExperimento", mappedBy="experimento")
+     */
+    protected $cortes;
 
     /**
      * @ORM\OneToMany(targetEntity="Muestra", mappedBy="experimento")
@@ -69,6 +74,15 @@ class Experimento {
     public function __construct(){
         $this->objetivos = new ArrayCollection();
         $this->muestras = new ArrayCollection();
+        $this->cortes = new ArrayCollection();
+    }
+
+    public function __toString(){
+        $result = date('d/M/y', $this->getFechaInicio()->getTimestamp());
+        if($this->getActividadCientifica()){
+            $result = $result.' - '.$this->getActividadCientifica()->getNombre();
+        }
+        return $result;
     }
 
     /**
@@ -155,12 +169,12 @@ class Experimento {
     /**
      * Set Trabajo
      *
-     * @param \AppBundle\Entity\Trabajo $trabajo
+     * @param \AppBundle\Entity\ActividadCientifica $actividadCientifica
      * @return Experimento
      */
-    public function setTrabajo(\AppBundle\Entity\Trabajo $trabajo = null)
+    public function setActividadCientifica(\AppBundle\Entity\ActividadCientifica $actividadCientifica = null)
     {
-        $this->trabajo = $trabajo;
+        $this->actividadCientifica = $actividadCientifica;
 
         return $this;
     }
@@ -168,11 +182,11 @@ class Experimento {
     /**
      * Get Trabajo
      *
-     * @return \AppBundle\Entity\Trabajo 
+     * @return \AppBundle\Entity\ActividadCientifica
      */
-    public function getTrabajo()
+    public function getActividadCientifica()
     {
-        return $this->trabajo;
+        return $this->actividadCientifica;
     }
 
     /**
@@ -239,6 +253,39 @@ class Experimento {
     public function getMuestras()
     {
         return $this->muestras;
+    }
+
+    /**
+     * Add PlanificacionCorteExperimento
+     *
+     * @param \AppBundle\Entity\PlanificacionCorteExperimento $cortes
+     * @return Experimento
+     */
+    public function addCorte(\AppBundle\Entity\PlanificacionCorteExperimento $cortes)
+    {
+        $this->cortes[] = $cortes;
+
+        return $this;
+    }
+
+    /**
+     * Remove PlanificacionCorteExperimento
+     *
+     * @param \AppBundle\Entity\PlanificacionCorteExperimento $cortes
+     */
+    public function removeCorte(\AppBundle\Entity\PlanificacionCorteExperimento $cortes)
+    {
+        $this->cortes->removeElement($cortes);
+    }
+
+    /**
+     * Get PlanificacionCorteExperimento
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getCortes()
+    {
+        return $this->cortes;
     }
 
     /**

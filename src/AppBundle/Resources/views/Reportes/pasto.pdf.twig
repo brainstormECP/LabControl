@@ -1,0 +1,24 @@
+<pdf>
+    <dynamic-page>
+        <h1>Muestras</h1>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Especie</th>
+                <th>Edad</th>
+                <th>Epoca</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for entity in entities %}
+                <tr>
+                    <td>{{ entity.especie }}</td>
+                    <td>$ {{ entity.dias }}</td>
+                    <td>$ {{ entity.epoca }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </dynamic-page>
+</pdf>

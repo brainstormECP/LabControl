@@ -15,11 +15,18 @@ class ExperimentoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('FechaInicio')
-            ->add('FechaFin')
-            ->add('Observaciones')
-            ->add('Investigador')
-            ->add('Trabajo')
+            ->add('fechaInicio', 'date', array(
+                'input' => 'datetime',
+                'widget' => 'single_text',
+                'format' => 'dd/MM/yyyy'
+            ))
+            ->add('fechaFin', 'date', array(
+                'input' => 'datetime',
+                'widget' => 'single_text',
+                'format' => 'dd/MM/yyyy'
+            ))
+            ->add('observaciones')
+            ->add('actividadCientifica')
         ;
     }
     

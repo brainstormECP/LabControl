@@ -1,36 +1,32 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
-    <h1>SalidaReactivo</h1>
+{% block content -%}
+    <h1>Salida de Reactivo</h1>
 
     <table class="record_properties">
         <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ entity.Id }}</td>
-            </tr>
-            <tr>
-                <th>Fecha</th>
-                <td>{{ entity.Fecha|date('Y-m-d H:i:s') }}</td>
-            </tr>
-            <tr>
-                <th>Cantidad</th>
-                <td>{{ entity.Cantidad }}</td>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <td>{{ entity.Id }}</td>
+        </tr>
+        <tr>
+            <th>Fecha</th>
+            <td>{{ entity.Fecha|date('d/m/Y') }}</td>
+        </tr>
+        <tr>
+            <th>Reactivo</th>
+            <td>{{ entity.Reactivo }}</td>
+        </tr>
+        <tr>
+            <th>Cantidad</th>
+            <td>{{ entity.Cantidad }}</td>
+        </tr>
         </tbody>
     </table>
-
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('salidareactivo') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('salidareactivo_edit', { 'id': entity.Id }) }}">
-            Edit
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+    <div class="form-group">
+        <a class="btn btn-default" href="{{ path('salidareactivo') }}">Lista de Salidas de Reactivo</a>
+        {{ form(delete_form) }}
+    </div>
 {% endblock %}
+
+

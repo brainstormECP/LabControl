@@ -31,7 +31,7 @@ class InvestigadorController extends Controller
 
         $entities = $em->getRepository('AppBundle:Investigador')->findAll();
 
-        return $this->render('', array(
+        return $this->render('investigador/index.html.twig', array(
             'entities' => $entities,
         ));
     }
@@ -48,15 +48,24 @@ class InvestigadorController extends Controller
         $form = $this->createCreateForm($entity);
         $form->handleRequest($request);
 
+        $entity->setActivationToken('no se que es');
+
+        $plainPassword = $entity->getPassword();
+        $encoder = $this->container->get('security.password_encoder');
+        $encoded = $encoder->encodePassword($entity, $plainPassword);
+        $entity->setPassword($encoded);
+        $entity->setIsActive(true);
+        $entity->addRole($em = $this->getDoctrine()->getManager()->getRepository('AppBundle:Role')->findByNombre('Investigador'));
+
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
-
-            return $this->redirect($this->generateUrl('investigador_show', array('id' => $entity->getId())));
+            $this->get('session')->getFlashBag()->add('info', 'Se creo correctamente el Investigador');
+            return $this->redirect($this->generateUrl('investigador'));
         }
 
-        return $this->render('', array(
+        return $this->render('investigador/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -76,8 +85,6 @@ class InvestigadorController extends Controller
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
-
         return $form;
     }
 
@@ -93,7 +100,7 @@ class InvestigadorController extends Controller
         $entity = new Investigador();
         $form   = $this->createCreateForm($entity);
 
-        return $this->render('', array(
+        return $this->render('investigador/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -118,7 +125,7 @@ class InvestigadorController extends Controller
 
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('', array(
+        return $this->render('investigador/show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -144,7 +151,7 @@ class InvestigadorController extends Controller
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('', array(
+        return $this->render('investigador/edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -164,8 +171,6 @@ class InvestigadorController extends Controller
             'action' => $this->generateUrl('investigador_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
-
-        $form->add('submit', 'submit', array('label' => 'Update'));
 
         return $form;
     }
@@ -190,13 +195,18 @@ class InvestigadorController extends Controller
         $editForm = $this->createEditForm($entity);
         $editForm->handleRequest($request);
 
+        $plainPassword = $entity->getPassword();
+        $encoder = $this->container->get('security.password_encoder');
+        $encoded = $encoder->encodePassword($entity, $plainPassword);
+        $entity->setPassword($encoded);
+
         if ($editForm->isValid()) {
             $em->flush();
-
-            return $this->redirect($this->generateUrl('investigador_edit', array('id' => $id)));
+            $this->get('session')->getFlashBag()->add('info', 'Se edito correctamente el Investigador');
+            return $this->redirect($this->generateUrl('investigador'));
         }
 
-        return $this->render('', array(
+        return $this->render('investigador/edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -240,7 +250,7 @@ class InvestigadorController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('investigador_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
+            ->add('submit', 'submit', array('label' => 'Borrar', 'attr' => array('class' => 'btn btn-danger')))
             ->getForm()
         ;
     }

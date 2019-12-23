@@ -25,7 +25,7 @@ class Institucion {
 
     /**
      * @var string
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", unique=true)
      */
     protected $nombre;
 
@@ -42,6 +42,15 @@ class Institucion {
      */
     protected $pais;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Investigador", mappedBy="institucion")
+     */
+    protected $investigadores;
+
+
+    public function __toString(){
+        return $this->getNombre();
+    }
 
     /**
      * Get Id
@@ -120,5 +129,45 @@ class Institucion {
     public function getPais()
     {
         return $this->pais;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->investigadores = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add investigadores
+     *
+     * @param \AppBundle\Entity\Investigador $investigadores
+     * @return Institucion
+     */
+    public function addInvestigadore(\AppBundle\Entity\Investigador $investigadores)
+    {
+        $this->investigadores[] = $investigadores;
+
+        return $this;
+    }
+
+    /**
+     * Remove investigadores
+     *
+     * @param \AppBundle\Entity\Investigador $investigadores
+     */
+    public function removeInvestigadore(\AppBundle\Entity\Investigador $investigadores)
+    {
+        $this->investigadores->removeElement($investigadores);
+    }
+
+    /**
+     * Get investigadores
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getInvestigadores()
+    {
+        return $this->investigadores;
     }
 }

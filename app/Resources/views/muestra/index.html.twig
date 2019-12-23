@@ -1,45 +1,33 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
+{% block content -%}
     <h1>Muestra list</h1>
 
-    <table class="records_list">
+    <a class="btn btn-success" href="{{ path('muestra_new') }}">Agregar Muestra</a>
+    <table class="table">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Noorden</th>
-                <th>Claveinterna</th>
-                <th>Claveexterna</th>
-                <th>Actions</th>
-            </tr>
+        <tr>
+            <th>No orden</th>
+            <th>Clave interna</th>
+            <th>Clave externa</th>
+            <th>Experimento</th>
+            <th>Acciones</th>
+        </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
-                <td><a href="{{ path('muestra_show', { 'id': entity.Id }) }}">{{ entity.Id }}</a></td>
-                <td>{{ entity.NoOrden }}</td>
-                <td>{{ entity.ClaveInterna }}</td>
-                <td>{{ entity.ClaveExterna }}</td>
+                <td>{{ entity.noOrden }}</td>
+                <td>{{ entity.claveInterna }}</td>
+                <td>{{ entity.claveExterna }}</td>
+                <td>{{ entity.experimento }}</td>
                 <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('muestra_show', { 'id': entity.Id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('muestra_edit', { 'id': entity.Id }) }}">edit</a>
-                    </li>
-                </ul>
+                    <a class="btn btn-info" href="{{ path('muestra_edit', { 'id': entity.Id }) }}">Editar</a>
+                    <a class="btn btn-danger" href="{{ path('muestra_show', { 'id': entity.Id }) }}">Borrar</a>
+
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
-
-        <ul>
-        <li>
-            <a href="{{ path('muestra_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
-    {% endblock %}
+{% endblock %}

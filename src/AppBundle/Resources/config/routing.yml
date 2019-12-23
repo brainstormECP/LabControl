@@ -1,0 +1,4 @@
+app_pasto:
+    resource: "@AppBundle/Resources/config/routing/pasto.yml"
+    prefix:   /pasto
+

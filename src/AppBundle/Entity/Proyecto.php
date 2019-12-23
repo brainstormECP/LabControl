@@ -14,16 +14,17 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="proyecto")
  * @ORM\Entity()
  */
-class Proyecto extends Trabajo {
+class Proyecto extends ActividadCientifica {
 
     /**
      * @var string
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string",nullable=true)
      */
     protected $numero;
 
-
-
+    public function __toString(){
+        return 'Proyecto ('.$this->getNombre().' #'.$this->getNumero().')';
+    }
 
 
     /**

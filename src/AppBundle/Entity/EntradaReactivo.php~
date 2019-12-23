@@ -1,0 +1,122 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * EntradaReactivo
+ *
+ * @ORM\Table(name="entrada_reactivo")
+ * @ORM\Entity
+ */
+class EntradaReactivo
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected  $Id;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="Fecha", type="date")
+     */
+    protected $Fecha;
+
+    /**
+     *
+     * @ORM\Column(name="Cantidad", type="decimal", scale=2)
+     */
+    protected $Cantidad;
+
+    /**
+     * @var Reactivo
+     * @ORM\ManyToOne(targetEntity="InventarioReactivo", inversedBy="Entradas")
+     * @ORM\JoinColumn(name="InventarioReactivoId", referencedColumnName="Id")
+     */
+    protected $Reactivo;
+
+    /**
+     * Get Id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->Id;
+    }
+
+    /**
+     * Set Fecha
+     *
+     * @param \DateTime $fecha
+     * @return EntradaReactivo
+     */
+    public function setFecha($fecha)
+    {
+        $this->Fecha = $fecha;
+
+        return $this;
+    }
+
+    /**
+     * Get Fecha
+     *
+     * @return \DateTime 
+     */
+    public function getFecha()
+    {
+        return $this->Fecha;
+    }
+
+    /**
+     * Set Cantidad
+     *
+     * @param string $cantidad
+     * @return EntradaReactivo
+     */
+    public function setCantidad($cantidad)
+    {
+        $this->Cantidad = $cantidad;
+
+        return $this;
+    }
+
+    /**
+     * Get Cantidad
+     *
+     * @return string 
+     */
+    public function getCantidad()
+    {
+        return $this->Cantidad;
+    }
+
+    /**
+     * Set Reactivo
+     *
+     * @param \AppBundle\Entity\InventarioReactivo $reactivo
+     * @return EntradaReactivo
+     */
+    public function setReactivo(\AppBundle\Entity\InventarioReactivo $reactivo = null)
+    {
+        $this->Reactivo = $reactivo;
+
+        return $this;
+    }
+
+    /**
+     * Get Reactivo
+     *
+     * @return \AppBundle\Entity\InventarioReactivo 
+     */
+    public function getReactivo()
+    {
+        return $this->Reactivo;
+    }
+}

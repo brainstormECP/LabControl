@@ -29,9 +29,10 @@ class ExperimentoController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('AppBundle:Experimento')->findAll();
+        $user = $this->getUser();
+        $entities = $em->getRepository('AppBundle:Experimento')->findByInvestigador($user);
 
-        return $this->render('', array(
+        return $this->render('experimento/index.html.twig', array(
             'entities' => $entities,
         ));
     }
@@ -40,7 +41,6 @@ class ExperimentoController extends Controller
      *
      * @Route("/", name="experimento_create")
      * @Method("POST")
-     * @Template("AppBundle:Experimento:new.html.twig")
      */
     public function createAction(Request $request)
     {
@@ -48,15 +48,21 @@ class ExperimentoController extends Controller
         $form = $this->createCreateForm($entity);
         $form->handleRequest($request);
 
-        if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($entity);
-            $em->flush();
-
-            return $this->redirect($this->generateUrl('experimento_show', array('id' => $entity->getId())));
+        if($this->get('security.authorization_checker' ) ->isGranted('IS_AUTHENTICATED_FULLY' )) {
+            $user = $this->getUser();
+            if(in_array('ROLE_INVESTIGADOR',$user->getRoles(),true)){
+                $entity->setInvestigador($user);
+                if ($form->isValid()) {
+                    $em = $this->getDoctrine()->getManager();
+                    $em->persist($entity);
+                    $em->flush();
+                    $this->get('session')->getFlashBag()->add('info', 'Se creo correctamente el Experimento');
+                    return $this->redirect($this->generateUrl('experimento', array('id' => $entity->getId())));
+                }
+            }
         }
 
-        return $this->render('', array(
+        return $this->render('experimento/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -76,8 +82,6 @@ class ExperimentoController extends Controller
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
-
         return $form;
     }
 
@@ -93,7 +97,7 @@ class ExperimentoController extends Controller
         $entity = new Experimento();
         $form   = $this->createCreateForm($entity);
 
-        return $this->render('', array(
+        return $this->render('experimento/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -118,7 +122,7 @@ class ExperimentoController extends Controller
 
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('', array(
+        return $this->render('experimento/show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -144,7 +148,7 @@ class ExperimentoController extends Controller
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('', array(
+        return $this->render('experimento/edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -165,8 +169,6 @@ class ExperimentoController extends Controller
             'method' => 'PUT',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
-
         return $form;
     }
     /**
@@ -174,7 +176,6 @@ class ExperimentoController extends Controller
      *
      * @Route("/{id}", name="experimento_update")
      * @Method("PUT")
-     * @Template("AppBundle:Experimento:edit.html.twig")
      */
     public function updateAction(Request $request, $id)
     {
@@ -192,11 +193,11 @@ class ExperimentoController extends Controller
 
         if ($editForm->isValid()) {
             $em->flush();
-
-            return $this->redirect($this->generateUrl('experimento_edit', array('id' => $id)));
+            $this->get('session')->getFlashBag()->add('info', 'Se edito correctamente el Experimento');
+            return $this->redirect($this->generateUrl('experimento', array('id' => $id)));
         }
 
-        return $this->render('', array(
+        return $this->render('experimento/edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -240,7 +241,7 @@ class ExperimentoController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('experimento_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
+            ->add('submit', 'submit', array('label' => 'Borrar', 'attr'=>array('class' => 'btn btn-danger')))
             ->getForm()
         ;
     }

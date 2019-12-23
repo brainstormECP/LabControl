@@ -31,7 +31,7 @@ class SalidaReactivoController extends Controller
 
         $entities = $em->getRepository('AppBundle:SalidaReactivo')->findAll();
 
-        return $this->render('', array(
+        return $this->render('salidareactivo/index.html.twig', array(
             'entities' => $entities,
         ));
     }
@@ -40,7 +40,6 @@ class SalidaReactivoController extends Controller
      *
      * @Route("/", name="salidareactivo_create")
      * @Method("POST")
-     * @Template("AppBundle:SalidaReactivo:new.html.twig")
      */
     public function createAction(Request $request)
     {
@@ -52,11 +51,11 @@ class SalidaReactivoController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
-
-            return $this->redirect($this->generateUrl('salidareactivo_show', array('id' => $entity->getId())));
+            $this->get('session')->getFlashBag()->add('info', 'Se creo correctamente la Salida de Reactivo');
+            return $this->redirect($this->generateUrl('salidareactivo', array('id' => $entity->getId())));
         }
 
-        return $this->render('', array(
+        return $this->render('salidareactivo/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -76,8 +75,6 @@ class SalidaReactivoController extends Controller
             'method' => 'POST',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Create'));
-
         return $form;
     }
 
@@ -93,7 +90,7 @@ class SalidaReactivoController extends Controller
         $entity = new SalidaReactivo();
         $form   = $this->createCreateForm($entity);
 
-        return $this->render('', array(
+        return $this->render('salidareactivo/new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
         ));
@@ -118,7 +115,7 @@ class SalidaReactivoController extends Controller
 
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('', array(
+        return $this->render('salidareactivo/show.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -144,7 +141,7 @@ class SalidaReactivoController extends Controller
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('', array(
+        return $this->render('salidareactivo/edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -165,8 +162,6 @@ class SalidaReactivoController extends Controller
             'method' => 'PUT',
         ));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
-
         return $form;
     }
     /**
@@ -174,7 +169,6 @@ class SalidaReactivoController extends Controller
      *
      * @Route("/{id}", name="salidareactivo_update")
      * @Method("PUT")
-     * @Template("AppBundle:SalidaReactivo:edit.html.twig")
      */
     public function updateAction(Request $request, $id)
     {
@@ -192,11 +186,11 @@ class SalidaReactivoController extends Controller
 
         if ($editForm->isValid()) {
             $em->flush();
-
-            return $this->redirect($this->generateUrl('salidareactivo_edit', array('id' => $id)));
+            $this->get('session')->getFlashBag()->add('info', 'Se edito correctamente la Salida de Reactivo');
+            return $this->redirect($this->generateUrl('salidareactivo', array('id' => $id)));
         }
 
-        return $this->render('', array(
+        return $this->render('salidareactivo/edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -240,7 +234,7 @@ class SalidaReactivoController extends Controller
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('salidareactivo_delete', array('id' => $id)))
             ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
+            ->add('submit', 'submit', array('label' => 'Borrar', 'attr' => array('class' => 'btn btn-danger')))
             ->getForm()
         ;
     }

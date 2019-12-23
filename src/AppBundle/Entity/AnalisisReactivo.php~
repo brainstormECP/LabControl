@@ -1,0 +1,124 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Elvis
+ * Date: 07/07/2015
+ * Time: 16:28
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Table(name="analisis_reactivo")
+ * @ORM\Entity()
+ */
+class AnalisisReactivo {
+
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $Id;
+
+    /**
+     * @ORM\Column(type="decimal", scale=2)
+     */
+    protected $Cantidad;
+
+    /**
+     * @var Analisis
+     * @ORM\ManyToOne(targetEntity="Analisis", inversedBy="AnalisisReactivos")
+     * @ORM\JoinColumn(name="AnalisisId", referencedColumnName="Id")
+     */
+    protected $Analisis;
+
+    /**
+     * @var Reactivo
+     * @ORM\ManyToOne(targetEntity="Reactivo", inversedBy="AnalisisReactivos")
+     * @ORM\JoinColumn(name="ReactivoId", referencedColumnName="Id")
+     */
+    protected $Reactivo;
+
+
+    /**
+     * Get Id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->Id;
+    }
+
+    /**
+     * Set Cantidad
+     *
+     * @param string $cantidad
+     * @return AnalisisReactivo
+     */
+    public function setCantidad($cantidad)
+    {
+        $this->Cantidad = $cantidad;
+
+        return $this;
+    }
+
+    /**
+     * Get Cantidad
+     *
+     * @return string 
+     */
+    public function getCantidad()
+    {
+        return $this->Cantidad;
+    }
+
+    /**
+     * Set Analisis
+     *
+     * @param \AppBundle\Entity\Analisis $analisis
+     * @return AnalisisReactivo
+     */
+    public function setAnalisis(\AppBundle\Entity\Analisis $analisis = null)
+    {
+        $this->Analisis = $analisis;
+
+        return $this;
+    }
+
+    /**
+     * Get Analisis
+     *
+     * @return \AppBundle\Entity\Analisis 
+     */
+    public function getAnalisis()
+    {
+        return $this->Analisis;
+    }
+
+    /**
+     * Set Reactivo
+     *
+     * @param \AppBundle\Entity\Reactivo $reactivo
+     * @return AnalisisReactivo
+     */
+    public function setReactivo(\AppBundle\Entity\Reactivo $reactivo = null)
+    {
+        $this->Reactivo = $reactivo;
+
+        return $this;
+    }
+
+    /**
+     * Get Reactivo
+     *
+     * @return \AppBundle\Entity\Reactivo 
+     */
+    public function getReactivo()
+    {
+        return $this->Reactivo;
+    }
+}

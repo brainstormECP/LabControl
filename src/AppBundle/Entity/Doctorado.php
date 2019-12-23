@@ -14,7 +14,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="doctorado")
  * @ORM\Entity()
  */
-class Doctorado extends Trabajo {
+class Doctorado extends ActividadCientifica {
 
     /**
      * @var string
@@ -23,6 +23,9 @@ class Doctorado extends Trabajo {
     protected $especialidad;
 
 
+    public function __toString(){
+        return 'Doctorado ('.$this->getNombre().' - Especialidad: '.$this->getEspecialidad().')';
+    }
 
     /**
      * Set Especialidad

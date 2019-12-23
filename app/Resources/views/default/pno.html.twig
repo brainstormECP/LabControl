@@ -1,0 +1,26 @@
+{% extends 'moderna.layout.html.twig' %}
+
+{% block featured -%}
+    <section id="featured">
+        <div class="container">
+            <h1>Lista de Procedimientos Normativos</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fichero</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for entity in entities %}
+                    <tr>
+                        <td>{{ entity.nombre }}</td>
+                        <td><a class="btn btn-primary" href="{{ asset('uploads/pno/') }}{{ entity.imageName }}">Abrir
+                                fichero</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+{% endblock %}

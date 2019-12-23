@@ -1,6 +1,6 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
+{% block content -%}
     <h1>Muestra</h1>
 
     <table class="record_properties">
@@ -23,18 +23,5 @@
             </tr>
         </tbody>
     </table>
-
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('muestra') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('muestra_edit', { 'id': entity.Id }) }}">
-            Edit
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+        {{ form(delete_form) }}
 {% endblock %}

@@ -26,7 +26,7 @@ class Pais {
 
     /**
      * @var string
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", unique=true)
      */
     protected $nombre;
 
@@ -37,6 +37,11 @@ class Pais {
 
     public function __construct(){
         $this->instituciones = new ArrayCollection();
+    }
+
+
+    public function __toString(){
+        return $this->getNombre();
     }
 
 

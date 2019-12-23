@@ -1,14 +1,10 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
-    <h1>Maestria</h1>
+{% block content -%}
+    <h1>Maestría</h1>
 
     <table class="record_properties">
         <tbody>
-            <tr>
-                <th>Edicion</th>
-                <td>{{ entity.Edicion }}</td>
-            </tr>
             <tr>
                 <th>Id</th>
                 <td>{{ entity.Id }}</td>
@@ -17,20 +13,15 @@
                 <th>Nombre</th>
                 <td>{{ entity.Nombre }}</td>
             </tr>
+            <tr>
+                <th>Edición</th>
+                <td>{{ entity.Edicion }}</td>
+            </tr>
         </tbody>
     </table>
+    <div class="form-group">
+        <a class="btn btn-default" href="{{ path('maestria') }}">Lista de Maestrías</a>
+        {{ form(delete_form) }}
+    </div>
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('maestria') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('maestria_edit', { 'id': entity.Id }) }}">
-            Edit
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
 {% endblock %}

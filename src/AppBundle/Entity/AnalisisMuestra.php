@@ -24,18 +24,6 @@ class AnalisisMuestra {
     protected $id;
 
     /**
-     * @var boolean
-     * @ORM\Column(type="boolean")
-     *
-     */
-    protected $aprobado;
-
-    /**
-     * @ORM\Column(type="decimal", scale=2)
-     */
-    protected $resultado;
-
-    /**
      * @var muestra
      * @ORM\ManyToOne(targetEntity="Muestra", inversedBy="analisisMuestras")
      * @ORM\JoinColumn(name="muestraId", referencedColumnName="id")
@@ -50,11 +38,31 @@ class AnalisisMuestra {
     protected $analisis;
 
     /**
+     * @var boolean
+     * @ORM\Column(type="boolean",nullable=true)
+     *
+     */
+    protected $aprobado;
+
+    /**
+     * @ORM\Column(type="decimal", scale=2,nullable=true)
+     */
+    protected $resultado;
+
+
+
+    /**
      * @var tecnicoLaboratorio
-     * @ORM\ManyToOne(targetEntity="TecnicoLaboratorio", inversedBy="analisisMuestras")
+     * @ORM\ManyToOne(targetEntity="TecnicoLaboratorio", inversedBy="analisisMuestras", cascade="persist")
      * @ORM\JoinColumn(name="tecnicoLaboratorioId", referencedColumnName="id")
      */
     protected $tecnicoLaboratorio;
+
+    /**
+     * @var valores[]
+     * @ORM\OneToMany(targetEntity="CampoAnalisisValor", mappedBy="analisis", cascade= "persist")
+     */
+    protected $valores;
 
     /**
      * Get id
@@ -179,5 +187,57 @@ class AnalisisMuestra {
     public function getTecnicoLaboratorio()
     {
         return $this->tecnicoLaboratorio;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->valores = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add valores
+     *
+     * @param \AppBundle\Entity\CampoAnalisisValor $valores
+     * @return AnalisisMuestra
+     */
+    public function addValore(\AppBundle\Entity\CampoAnalisisValor $valores)
+    {
+        $this->valores[] = $valores;
+
+        return $this;
+    }
+
+    /**
+     * Remove valores
+     *
+     * @param \AppBundle\Entity\CampoAnalisisValor $valores
+     */
+    public function removeValore(\AppBundle\Entity\CampoAnalisisValor $valores)
+    {
+        $this->valores->removeElement($valores);
+    }
+
+    /**
+     * Get valores
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getValores()
+    {
+        return $this->valores;
+    }
+
+    public function __toString(){
+        return $this->getAnalisis()->getNombre();
+    }
+
+    public function getCamposToString(){
+        $campos = '';
+        foreach ($this->valores as $campo){
+            $campos = $campos.' '.$campo->getValor();
+        }
+        return $campos;
     }
 }

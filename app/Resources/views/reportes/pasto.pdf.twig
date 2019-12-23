@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+<h1>Muestras de estudios {{ tipo }}</h1>
+
+<table class="table .visible-print">
+    <thead>
+    <tr>
+        <th>Especie</th>
+        <th>Edad</th>
+        <th>Epoca</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td>{{ entity.especie }}</td>
+            <td>{{ entity.dias }}</td>
+            <td>{{ entity.epoca }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,16 +1,29 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
-    <h1>Reactivo edit</h1>
-
-    {{ form(edit_form) }}
-
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('reactivo') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+{% block content -%}
+    <div class="col-lg-12">
+        <h1>Editar Reactivo</h1>
+        <div class="panel panel-default">
+            <div class="panel-heading"> </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        {{ form_start(edit_form, {'attr':{ 'class':'form-horizontal' }}) }}
+                        <div class="form-group">
+                            <div class="col-md-7">
+                                {{ form_label(edit_form.nombre,'Nombre') }}
+                                {{ form_widget(edit_form.nombre,{'attr':{ 'class':'form-control','placeholder':'Nombre' }}) }}
+                                {{ form_errors(edit_form.nombre) }}
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Guardar">
+                        <a href="{{ path('reactivo') }}" class="btn btn-default">Lista de reactivos</a>
+                        {{ form_end(edit_form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
+
+

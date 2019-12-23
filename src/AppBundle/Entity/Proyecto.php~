@@ -1,0 +1,95 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Elvis
+ * Date: 07/07/2015
+ * Time: 16:27
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Table(name="proyecto")
+ * @ORM\Entity()
+ */
+class Proyecto  {
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    protected $Numero;
+
+
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    protected $Experimentos;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->Experimentos = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Set Numero
+     *
+     * @param string $numero
+     * @return Proyecto
+     */
+    public function setNumero($numero)
+    {
+        $this->Numero = $numero;
+
+        return $this;
+    }
+
+    /**
+     * Get Numero
+     *
+     * @return string 
+     */
+    public function getNumero()
+    {
+        return $this->Numero;
+    }
+
+    /**
+     * Add Experimentos
+     *
+     * @param \AppBundle\Entity\Experimento $experimentos
+     * @return Proyecto
+     */
+    public function addExperimento(\AppBundle\Entity\Experimento $experimentos)
+    {
+        $this->Experimentos[] = $experimentos;
+
+        return $this;
+    }
+
+    /**
+     * Remove Experimentos
+     *
+     * @param \AppBundle\Entity\Experimento $experimentos
+     */
+    public function removeExperimento(\AppBundle\Entity\Experimento $experimentos)
+    {
+        $this->Experimentos->removeElement($experimentos);
+    }
+
+    /**
+     * Get Experimentos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getExperimentos()
+    {
+        return $this->Experimentos;
+    }
+}

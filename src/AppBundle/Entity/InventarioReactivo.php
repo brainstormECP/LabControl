@@ -41,14 +41,12 @@ class InventarioReactivo {
      */
     protected $salidas;
 
-    /**
-     * @ORM\OneToMany(targetEntity="EntradaReactivo", mappedBy="reactivo")
-     */
-    protected $entradas;
-
     public function __construct(){
-        $this->entradas = new ArrayCollection();
         $this->salidas = new ArrayCollection();
+    }
+
+    public function __toString(){
+        return $this->getReactivo()->getNombre();
     }
 
 
@@ -141,36 +139,5 @@ class InventarioReactivo {
         return $this->salidas;
     }
 
-    /**
-     * Add Entradas
-     *
-     * @param \AppBundle\Entity\EntradaReactivo $entradas
-     * @return InventarioReactivo
-     */
-    public function addEntrada(\AppBundle\Entity\EntradaReactivo $entradas)
-    {
-        $this->entradas[] = $entradas;
 
-        return $this;
-    }
-
-    /**
-     * Remove Entradas
-     *
-     * @param \AppBundle\Entity\EntradaReactivo $entradas
-     */
-    public function removeEntrada(\AppBundle\Entity\EntradaReactivo $entradas)
-    {
-        $this->entradas->removeElement($entradas);
-    }
-
-    /**
-     * Get Entradas
-     *
-     * @return \Doctrine\Common\Collections\Collection 
-     */
-    public function getEntradas()
-    {
-        return $this->entradas;
-    }
 }

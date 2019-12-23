@@ -13,9 +13,16 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Table(name="muestra")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\MuestraRepository")
+ * @ORM\InheritanceType("JOINED")
+ * @ORM\DiscriminatorColumn(name="disc", type="string")
+ * @ORM\DiscriminatorMap({
+ *  "pasto" = "Pasto",
+ *  "otra_muestra" = "OtraMuestra"
+ * })
  */
-class Muestra {
+class Muestra
+{
 
     /**
      * @ORM\Id
@@ -25,22 +32,34 @@ class Muestra {
     protected $id;
 
     /**
+     * @var \DateTime
+     * @ORM\Column(type="date", nullable=true)
+     */
+    protected $fechaRecibida;
+
+    /**
      * @var string
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=true)
      */
     protected $noOrden;
 
     /**
      * @var string
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=true)
      */
     protected $claveInterna;
 
     /**
      * @var string
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=true)
      */
     protected $claveExterna;
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    protected $estado;
 
     /**
      * @var experimento
@@ -51,24 +70,26 @@ class Muestra {
 
     /**
      * @var tratamiento[]
-     * @ORM\ManyToMany(targetEntity="Tratamiento", mappedBy="muestra")
+     * @ORM\ManyToMany(targetEntity="Tratamiento", inversedBy="muestras", cascade="persist" )
+     * @ORM\JoinTable(name="tratamiento_muestras")
      */
     protected $tratamientos;
 
     /**
      * @var analisisMuestra[]
-     * @ORM\OneToMany(targetEntity="AnalisisMuestra", mappedBy="muestra")
+     * @ORM\OneToMany(targetEntity="AnalisisMuestra", mappedBy="muestra", cascade="persist")
      */
     protected $analisisMuestras;
 
     /**
-     * @var especie
-     * @ORM\ManyToOne(targetEntity="Especie", inversedBy="muestras")
-     * @ORM\JoinColumn(name="especieId", referencedColumnName="id")
+     * @var investigador
+     * @ORM\ManyToOne(targetEntity="Investigador", inversedBy="muestras")
+     * @ORM\JoinColumn(name="investigadorId", referencedColumnName="id")
      */
-    protected $especie;
+    protected $investigador;
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->tratamientos = new ArrayCollection();
         $this->analisisMuestras = new ArrayCollection();
     }
@@ -77,11 +98,34 @@ class Muestra {
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set FechaRecibida
+     *
+     * @param \DateTime $fechaRecibida
+     * @return Muestra
+     */
+    public function setFechaRecibida($fechaRecibida)
+    {
+        $this->fechaRecibida = $fechaRecibida;
+
+        return $this;
+    }
+
+    /**
+     * Get FechaRecibida
+     *
+     * @return \DateTime
+     */
+    public function getFechaRecibida()
+    {
+        return $this->fechaRecibida;
     }
 
     /**
@@ -100,7 +144,7 @@ class Muestra {
     /**
      * Get NoOrden
      *
-     * @return string 
+     * @return string
      */
     public function getNoOrden()
     {
@@ -123,7 +167,7 @@ class Muestra {
     /**
      * Get ClaveInterna
      *
-     * @return string 
+     * @return string
      */
     public function getClaveInterna()
     {
@@ -146,11 +190,34 @@ class Muestra {
     /**
      * Get ClaveExterna
      *
-     * @return string 
+     * @return string
      */
     public function getClaveExterna()
     {
         return $this->claveExterna;
+    }
+
+    /**
+     * Set Estado
+     *
+     * @param string $estado
+     * @return Muestra
+     */
+    public function setEstado($estado)
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    /**
+     * Get Estado
+     *
+     * @return string
+     */
+    public function getEstado()
+    {
+        return $this->estado;
     }
 
     /**
@@ -169,7 +236,7 @@ class Muestra {
     /**
      * Get Experimento
      *
-     * @return \AppBundle\Entity\Experimento 
+     * @return \AppBundle\Entity\Experimento
      */
     public function getExperimento()
     {
@@ -202,34 +269,11 @@ class Muestra {
     /**
      * Get Tratamientos
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getTratamientos()
     {
         return $this->tratamientos;
-    }
-
-    /**
-     * Set Especie
-     *
-     * @param \AppBundle\Entity\Especie $especie
-     * @return Muestra
-     */
-    public function setEspecie(\AppBundle\Entity\Especie $especie = null)
-    {
-        $this->especie = $especie;
-
-        return $this;
-    }
-
-    /**
-     * Get Especie
-     *
-     * @return \AppBundle\Entity\Especie 
-     */
-    public function getEspecie()
-    {
-        return $this->especie;
     }
 
     /**
@@ -258,10 +302,62 @@ class Muestra {
     /**
      * Get AnalisisMuestras
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getAnalisisMuestras()
     {
         return $this->analisisMuestras;
     }
+
+    public function getAnalisisPendientes()
+    {
+        $cantidadPendientes = 0;
+        if ($this->getEstado() == 'Enviada') {
+            $cantidadAnalisis = 0;
+            foreach ($this->getAnalisisMuestras() as $analisis) {
+                $cantidadAnalisis++;
+            }
+            return $cantidadAnalisis;
+        } elseif ($this->getEstado() == 'Recibida') {
+            $cantidadAnalisis = 0;
+            foreach ($this->getAnalisisMuestras() as $analisis) {
+                if ($analisis->getAprobado() && $analisis->getResultado() == "") {
+                    $cantidadPendientes++;
+                }
+                $cantidadAnalisis++;
+            }
+            return $cantidadPendientes.'/'.$cantidadAnalisis;
+        }
+        return $cantidadPendientes;
+    }
+
+
+    public function __toString()
+    {
+        return $this->getClaveInterna();
+    }
+
+    /**
+     * Set Investigador
+     *
+     * @param \AppBundle\Entity\Investigador $investigador
+     * @return Muestra
+     */
+    public function setInvestigador(\AppBundle\Entity\Investigador $investigador = null)
+    {
+        $this->investigador = $investigador;
+
+        return $this;
+    }
+
+    /**
+     * Get Investigador
+     *
+     * @return \AppBundle\Entity\Investigador
+     */
+    public function getInvestigador()
+    {
+        return $this->investigador;
+    }
+
 }

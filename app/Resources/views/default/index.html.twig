@@ -1,106 +1,48 @@
-{% extends 'tecnico.layout.html.twig' %}
+{% extends 'moderna.layout.html.twig' %}
 
-{% block content %}
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Dashboard</h1>
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-comments fa-5x"></i>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                            <div class="huge">26</div>
-                            <div>New Comments!</div>
-                        </div>
-                    </div>
+{% block featured %}
+<section id="featured">
+    <!-- start slider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {% for Message in app.session.flashbag.get('info') %}
+                    <p class="alert alert-success">
+                        <i class="fa fa-smile-o"></i>
+                        {{ Message | raw }}
+                    </p>
+                {% endfor %}
+                <!-- Slider -->
+                <div id="main-slider" class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="{{ asset('moderna/img/slides/1.jpg') }}" alt="" />
+                            <div class="flex-caption">
+                                <h3>Gestión de muestras y su seguimiento</h3>
+                                <p>Se analizan anualmente más de 1000 muestras</p>
+
+                            </div>
+                        </li>
+                        <li>
+                            <img src="{{ asset('moderna/img/slides/2.jpg') }}" alt="" />
+                            <div class="flex-caption">
+                                <h3>Ensayos</h3>
+                                <p>Actualmente se realizan siete ensayos y se garantiza la gestión de todas las etapas del proceso analítico desde la recepción de la muestra, a la emisión de informes finales</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="{{ asset('moderna/img/slides/3.jpg') }}" alt="" />
+                            <div class="flex-caption">
+                                <h3>Historia</h3>
+                                <p>El Laboratorio de Análisis Químico se creó en 1966 para contribuir a las investigaciones que se realizan en la EEPF IH</p>
+
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <a href="#">
-                    <div class="panel-footer">
-                        <span class="pull-left">View Details</span>
-                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-green">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-tasks fa-5x"></i>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                            <div class="huge">12</div>
-                            <div>New Tasks!</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#">
-                    <div class="panel-footer">
-                        <span class="pull-left">View Details</span>
-                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-yellow">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-shopping-cart fa-5x"></i>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                            <div class="huge">124</div>
-                            <div>New Orders!</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#">
-                    <div class="panel-footer">
-                        <span class="pull-left">View Details</span>
-                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-            <div class="panel panel-red">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col-xs-3">
-                            <i class="fa fa-support fa-5x"></i>
-                        </div>
-                        <div class="col-xs-9 text-right">
-                            <div class="huge">13</div>
-                            <div>Support Tickets!</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="#">
-                    <div class="panel-footer">
-                        <span class="pull-left">View Details</span>
-                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
+                <!-- end slider -->
             </div>
         </div>
     </div>
-    <!-- /.row -->
+</section>
 {% endblock %}

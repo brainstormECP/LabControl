@@ -1,0 +1,185 @@
+{% extends 'layout.html.twig' %}
+
+{% block content -%}
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h1>Resultados del Análisis <span id="analisisNombre">{{ entity.analisis }}</span></h1></div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        {{ form_start(edit_form, {'attr':{ 'class':'form-horizontal' }}) }}
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="campos"
+                                     data-prototype="{{ form_widget(edit_form.valores.vars.prototype)| e }}">
+                                    {# iterate over each existing tag and render its only field: name #}
+                                    {% for campo in edit_form.valores %}
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <div class="col-md-7">
+                                                    {{ form_widget(campo.campo,{'attr':{ 'class':'form-control' }}) }}
+                                                </div>
+                                                <div class="col-md-3">
+                                                    {{ form_widget(campo.valor,{'attr':{ 'class':'form-control' }}) }}
+                                                    {{ form_errors(campo.valor) }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <div class="col-md-6">
+                                    {{ form_label(edit_form.resultado) }}
+                                </div>
+                                <div class="col-md-4">
+                                    {{ form_widget(edit_form.resultado,{'attr':{ 'class':'form-control' }}) }}
+                                    {{ form_errors(edit_form.resultado) }}
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Guardar">
+                        <a href="{{ path('analisis') }}" class="btn btn-default">Lista de análisis</a>
+                        {{ form_end(edit_form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block adicionalscripts %}
+    <script>
+        var collectionHolder;
+
+        // setup an "add a tag" link
+        var addTagLink = $('<a href="#" class="btn btn-success">Añadir Campo</a>');
+        var newLinkLi = $('<div class="col-md-7" ></div>').append(addTagLink);
+        jQuery(document).ready(function () {
+            // Get the ul that holds the collection of tags
+            collectionHolder = $('div.campos');
+
+            // count the current form inputs we have (e.g. 2), use that as the new
+            // index when inserting a new item (e.g. 2)
+            collectionHolder.data('index', collectionHolder.find(':input').length);
+            addTagLink.on('click', function (e) {
+                // prevent the link from creating a "#" on the URL
+                e.preventDefault();
+                // add a new tag form (see next code block)
+                addTagForm(collectionHolder, newLinkLi);
+            });
+            var ana = $('#analisisNombre').html();
+            if(ana == "Materia Seca"){
+                $(document).on('change', '#appbundle_analisis_valores_1_valor', function () {
+                    var pesoVerde = $('#appbundle_analisis_valores_1_valor').val();
+                    var pesoSeco = $('#appbundle_analisis_valores_2_valor').val();
+
+                    $('#appbundle_analisis_resultado').val( (parseFloat(pesoSeco) / parseFloat(pesoVerde)) * 100);
+
+                });
+
+                $(document).on('change', '#appbundle_analisis_valores_2_valor', function () {
+                    var pesoVerde = $('#appbundle_analisis_valores_1_valor').val();
+                    var pesoSeco = $('#appbundle_analisis_valores_2_valor').val();
+
+                    $('#appbundle_analisis_resultado').val( (pesoSeco / pesoVerde) * 100);
+
+                });
+            }
+            if(ana == "FDA"){
+                $(document).on('change', '#appbundle_analisis_valores_0_valor', function () {
+                    var pesoCrisol = $('#appbundle_analisis_valores_0_valor').val();
+                    var pesoEstufa = $('#appbundle_analisis_valores_1_valor').val();
+                    var pesoMuestra = $('#appbundle_analisis_valores_2_valor').val();
+
+                    $('#appbundle_analisis_resultado').val( ((parseFloat(pesoEstufa)- parseFloat(pesoCrisol)) / parseFloat(pesoMuestra)) * 100);
+
+                });
+
+                $(document).on('change', '#appbundle_analisis_valores_1_valor', function () {
+                    var pesoCrisol = $('#appbundle_analisis_valores_0_valor').val();
+                    var pesoEstufa = $('#appbundle_analisis_valores_1_valor').val();
+                    var pesoMuestra = $('#appbundle_analisis_valores_2_valor').val();
+
+                    $('#appbundle_analisis_resultado').val( ((parseFloat(pesoEstufa)- parseFloat(pesoCrisol)) / parseFloat(pesoMuestra)) * 100);
+
+                });
+
+                $(document).on('change', '#appbundle_analisis_valores_2_valor', function () {
+                    var pesoCrisol = $('#appbundle_analisis_valores_0_valor').val();
+                    var pesoEstufa = $('#appbundle_analisis_valores_1_valor').val();
+                    var pesoMuestra = $('#appbundle_analisis_valores_2_valor').val();
+
+                    $('#appbundle_analisis_resultado').val( ((parseFloat(pesoEstufa)- parseFloat(pesoCrisol)) / parseFloat(pesoMuestra)) * 100);
+
+                });
+            }
+            if(ana == "Fibra bruta"){
+                $(document).on('change', '#appbundle_analisis_valores_0_valor', function () {
+                    var pesoEstufa = $('#appbundle_analisis_valores_0_valor').val();
+                    var pesoMufla = $('#appbundle_analisis_valores_1_valor').val();
+                    var pesoMuestra = $('#appbundle_analisis_valores_2_valor').val();
+
+                    $('#appbundle_analisis_resultado').val( ((parseFloat(pesoEstufa) - parseFloat(pesoMufla)) / parseFloat(pesoMuestra)) * 100);
+
+                });
+
+                $(document).on('change', '#appbundle_analisis_valores_1_valor', function () {
+                    var pesoEstufa = $('#appbundle_analisis_valores_0_valor').val();
+                    var pesoMufla = $('#appbundle_analisis_valores_1_valor').val();
+                    var pesoMuestra = $('#appbundle_analisis_valores_2_valor').val();
+
+                    $('#appbundle_analisis_resultado').val( ((parseFloat(pesoEstufa) - parseFloat(pesoMufla)) / parseFloat(pesoMuestra)) * 100);
+
+                });
+
+                $(document).on('change', '#appbundle_analisis_valores_2_valor', function () {
+                    var pesoEstufa = $('#appbundle_analisis_valores_0_valor').val();
+                    var pesoMufla = $('#appbundle_analisis_valores_1_valor').val();
+                    var pesoMuestra = $('#appbundle_analisis_valores_2_valor').val();
+
+                    $('#appbundle_analisis_resultado').val(((parseFloat(pesoEstufa) - parseFloat(pesoMufla)) / parseFloat(pesoMuestra)) * 100);
+
+                });
+            }
+
+
+        });
+        function addTagForm(collectionHolder, newLinkLi) {
+            // Get the data-prototype explained earlier
+            var prototype = collectionHolder.data('prototype');
+            // get the new index
+            var index = collectionHolder.data('index');
+            // Replace '__name__' in the prototype's HTML to
+            // instead be a number based on how many items we have
+            var newForm = prototype.replace('<label for="appbundle_analisis_Campos___name___Nombre">Nombre</label>', '');
+            newForm = newForm.replace(/__name__/g, index);
+            newForm = newForm.replace(/<div /g, '<div class="form-group input-group" ');
+            newForm = newForm.replace('<input ', '<input class="form-control" ');
+
+
+            // increase the index with one for the next item
+            collectionHolder.data('index', index + 1);
+            // Display the form in the page in an li, before the "Add a tag" link li
+            var newFormLi = $('<div class="col-md-7"></div>').append(newForm);
+            newLinkLi.before(newFormLi);
+
+            // add a delete link to the new form
+            addTagFormDeleteLink(newFormLi.children());
+        }
+
+        function addTagFormDeleteLink(tagFormLi) {
+            var removeFormA = $('<a href="#" class="input-group-addon btn btn-danger"><i class="fa fa-trash-o"/></a>');
+            tagFormLi.append(removeFormA);
+            removeFormA.on('click', function (e) {
+                // prevent the link from creating a "#" on the URL
+                e.preventDefault();
+                // remove the li for the tag form
+                tagFormLi.remove();
+            });
+        }
+    </script>
+{% endblock %}

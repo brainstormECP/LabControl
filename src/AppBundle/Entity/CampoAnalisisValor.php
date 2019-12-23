@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Table(name="campo_analisis_valor")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\CampoAnalisisValorRepository")
  */
 class CampoAnalisisValor {
 
@@ -35,6 +35,13 @@ class CampoAnalisisValor {
      * @ORM\JoinColumn(name="campoId",referencedColumnName="id")
      */
     protected $campo;
+
+    /**
+     * @var AnalisisMuestra
+     * @ORM\ManyToOne(targetEntity="AnalisisMuestra", inversedBy="valores", cascade= "persist")
+     * @ORM\JoinColumn(name="analisisMuestraId",referencedColumnName="id")
+     */
+    protected $analisis;
 
     /**
      * Get Id
@@ -91,5 +98,28 @@ class CampoAnalisisValor {
     public function getCampo()
     {
         return $this->campo;
+    }
+
+    /**
+     * Set analisis
+     *
+     * @param \AppBundle\Entity\AnalisisMuestra $analisis
+     * @return CampoAnalisisValor
+     */
+    public function setAnalisis(\AppBundle\Entity\AnalisisMuestra $analisis = null)
+    {
+        $this->analisis = $analisis;
+
+        return $this;
+    }
+
+    /**
+     * Get analisis
+     *
+     * @return \AppBundle\Entity\AnalisisMuestra 
+     */
+    public function getAnalisis()
+    {
+        return $this->analisis;
     }
 }

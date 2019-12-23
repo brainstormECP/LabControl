@@ -1,0 +1,38 @@
+{% extends 'layout.html.twig' %}
+
+{% block content -%}
+    <h1>Análisis</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Análisis</th>
+            <th>Aprobado?</th>
+            <th>Valores</th>
+            <th>Resultado</th>
+            <th>Técnico</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.analisis }}</td>
+                {% if entity.aprobado %}
+                    <td><span class="label label-success"> Verdadero</span></td>
+                    <td>
+                        {% for c in entity.valores %}
+                            <strong>{{ c.campo }}</strong> : {{ c.valor }}<br>
+                        {% endfor %}
+                    </td>
+                    <td>{{ entity.resultado }} %</td>
+                    <td>{{ entity.tecnicoLaboratorio }}</td>
+                {% else %}
+                    <td><span class="label label-danger">Falso</span></td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

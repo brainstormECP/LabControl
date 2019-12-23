@@ -1,13 +1,57 @@
 security:
+    firewalls:
+        frontend:
+            pattern: ^/
+            anonymous: true
+            form_login:
+                login_path: /login
+                check_path: /login_check
+                provider: chain_provider
+                default_target_path: homepage
+                always_use_default_target_path: true
+            logout:
+                path:    /logout
+                target: /
+
+    access_control:
+        - { path: ^/login,     roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/user,      roles: ROLE_ADMIN }
+        - { path: ^/doctorado, roles: ROLE_INVESTIGADOR }
+        - { path: ^/pasto/new, roles: ROLE_INVESTIGADOR }
+        - { path: ^/otramuestra/new, roles: ROLE_INVESTIGADOR }
+        - { path: ^/maestria, roles: ROLE_INVESTIGADOR }
+        - { path: ^/proyecto, roles: ROLE_INVESTIGADOR }
+        - { path: ^/especie, roles: ROLE_INVESTIGADOR }
+        - { path: ^/experimento, roles: ROLE_INVESTIGADOR }
+        - { path: ^/especie, roles: ROLE_INVESTIGADOR }
+        - { path: ^/genero, roles: ROLE_INVESTIGADOR }
+        - { path: ^/familia, roles: ROLE_INVESTIGADOR }
+        - { path: ^/otrotipomuestra, roles: ROLE_INVESTIGADOR }
+        - { path: ^/reportes, roles: [ ROLE_ADMIN, ROLE_INVESTIGADOR , ROLE_TECNICO] }
+        - { path: ^/analisis,     roles: ROLE_ADMIN }
+        - { path: ^/*,         roles: IS_AUTHENTICATED_ANONYMOUSLY }
 
     providers:
+        chain_provider:
+            chain:
+                providers: [in_memory, database]
         in_memory:
-            memory: ~
+            memory:
+                users:
+                    admin:
+                        password: $2a$08$9ENAse2uGOaX3dBdIlVAauZmCq7FoUcl5nuvsor5QtwKxxc9H3u/.
+                        roles: 'ROLE_SADMIN'
+        database:
+            entity:
+                class: AppBundle:User
 
-    firewalls:
-        dev:
-            pattern: ^/(_(profiler|wdt|error)|css|images|js)/
-            security: false
+    encoders:
+        AppBundle\Entity\User:
+            algorithm: bcrypt
+            cost: 12
+        Symfony\Component\Security\Core\User\User:
+            algorithm: bcrypt
+            cost: 12
 
-        main:
-            anonymous: ~
+    role_hierarchy:
+        ROLE_SADMIN: [ROLE_ADMIN, ROLE_INVESTIGADOR, ROLE_TECNICO]

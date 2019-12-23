@@ -36,8 +36,8 @@ class EntradaReactivo
 
     /**
      * @var reactivo
-     * @ORM\ManyToOne(targetEntity="InventarioReactivo", inversedBy="entradas")
-     * @ORM\JoinColumn(name="inventarioReactivoId", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Reactivo", inversedBy="entradas")
+     * @ORM\JoinColumn(name="reactivoId", referencedColumnName="id")
      */
     protected $reactivo;
 
@@ -100,10 +100,10 @@ class EntradaReactivo
     /**
      * Set Reactivo
      *
-     * @param \AppBundle\Entity\InventarioReactivo $reactivo
+     * @param \AppBundle\Entity\Reactivo $reactivo
      * @return EntradaReactivo
      */
-    public function setReactivo(\AppBundle\Entity\InventarioReactivo $reactivo = null)
+    public function setReactivo(\AppBundle\Entity\Reactivo $reactivo = null)
     {
         $this->reactivo = $reactivo;
 
@@ -113,7 +113,7 @@ class EntradaReactivo
     /**
      * Get Reactivo
      *
-     * @return \AppBundle\Entity\InventarioReactivo 
+     * @return \AppBundle\Entity\Reactivo
      */
     public function getReactivo()
     {

@@ -1,0 +1,36 @@
+{% extends 'layout.html.twig' %}
+
+{% block aditionalStyle %}
+    <link rel="stylesheet" href="{{ asset('css/datatables.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mbs-qdtf.css') }}">
+{% endblock %}
+
+{% block content -%}
+    <h1>Muestras de nutricion animal</h1>
+    <a class="btn btn-success" href="{{ path('nutricion_pdf') }}">Mostrar PDF</a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Especie</th>
+            <th>Edad</th>
+            <th>Epoca</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.especie }}</td>
+                <td>{{ entity.dias }}</td>
+                <td>{{ entity.epoca }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block adicionalscripts %}
+    <script src="{{ asset('js/datatables.js') }}"></script>
+    <script src="{{ asset('js/mbs-qdtf.js') }}"></script>
+    <script src="{{ asset('js/pdfmake.js') }}"></script>
+    <script src="{{ asset('js/vfs_fonts.js') }}"></script>
+{% endblock %}

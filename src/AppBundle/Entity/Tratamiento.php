@@ -25,7 +25,7 @@ class Tratamiento {
 
     /**
      * @var string
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string",nullable=true)
      */
     protected $nombre;
 
@@ -42,8 +42,7 @@ class Tratamiento {
      * A Bidirectional Many to Many relationship.
      *
      * @var Muestra[]
-     * @ORM\ManyToMany(targetEntity="Muestra", inversedBy="tratamientos")
-     * @ORM\JoinTable(name="tratamiento_muestras")
+     * @ORM\ManyToMany(targetEntity="Muestra",mappedBy="tratamientos")
      */
     protected $muestras;
     /**

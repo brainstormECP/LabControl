@@ -1,0 +1,31 @@
+{% extends 'layout.html.twig' %}
+
+{% block content -%}
+    <h1>Lista de Familias</h1>
+    {% for Message in app.session.flashbag.get('info') %}
+        <p class="alert alert-success">
+            <i class="fa fa-smile-o"></i>
+            {{ Message | raw }}
+        </p>
+    {% endfor %}
+    <a class="btn btn-success" href="{{ path('familia_new') }}">Nueva Familia</a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.Nombre }}</td>
+                <td>
+                    <a class="btn btn-info" href="{{ path('familia_edit', { 'id': entity.Id }) }}">Editar</a>
+                    <a class="btn btn-danger" href="{{ path('familia_show', { 'id': entity.Id }) }}">Borrar</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

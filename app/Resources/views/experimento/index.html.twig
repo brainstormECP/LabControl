@@ -1,45 +1,39 @@
 {% extends 'layout.html.twig' %}
 
-{% block body -%}
-    <h1>Experimento list</h1>
-
-    <table class="records_list">
+{% block content -%}
+    <h1>Lista de Experimentos</h1>
+    {% for Message in app.session.flashbag.get('info') %}
+        <p class="alert alert-success">
+            <i class="fa fa-smile-o"></i>
+            {{ Message | raw }}
+        </p>
+    {% endfor %}
+    <a class="btn btn-success" href="{{ path('experimento_new') }}">Nuevo Experimento</a>
+    <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Fechainicio</th>
-                <th>Fechafin</th>
+                <th>Actividad Científica</th>
+                <th>Fecha de inicio</th>
+                <th>Fecha de fin</th>
                 <th>Observaciones</th>
-                <th>Actions</th>
+                <th>Investigador</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
         {% for entity in entities %}
             <tr>
-                <td><a href="{{ path('experimento_show', { 'id': entity.Id }) }}">{{ entity.Id }}</a></td>
-                <td>{% if entity.FechaInicio %}{{ entity.FechaInicio|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{% if entity.FechaFin %}{{ entity.FechaFin|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.ActividadCientifica }}</td>
+                <td>{% if entity.FechaInicio %}{{ entity.FechaInicio|date('d/m/Y') }}{% endif %}</td>
+                <td>{% if entity.FechaFin %}{{ entity.FechaFin|date('d/m/Y') }}{% endif %}</td>
                 <td>{{ entity.Observaciones }}</td>
+                <td>{{ entity.investigador }}</td>
                 <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('experimento_show', { 'id': entity.Id }) }}">show</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('experimento_edit', { 'id': entity.Id }) }}">edit</a>
-                    </li>
-                </ul>
+                    <a class="btn btn-info" href="{{ path('experimento_edit', { 'id': entity.Id }) }}">Editar</a>
+                    <a class="btn btn-danger" href="{{ path('experimento_show', { 'id': entity.Id }) }}">Borrar</a>
                 </td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
-
-        <ul>
-        <li>
-            <a href="{{ path('experimento_new') }}">
-                Create a new entry
-            </a>
-        </li>
-    </ul>
     {% endblock %}

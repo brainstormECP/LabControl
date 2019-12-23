@@ -15,9 +15,13 @@ class EntradaReactivoType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('Fecha')
-            ->add('Cantidad')
-            ->add('Reactivo')
+            ->add('fecha', 'date', array(
+                'input' => 'datetime',
+                'widget' => 'single_text',
+                'format' => 'dd/MM/yyyy'
+            ))
+            ->add('cantidad')
+            ->add('reactivo')
         ;
     }
     

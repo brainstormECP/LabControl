@@ -17,7 +17,7 @@ use Symfony\Component\Security\Core\Role\RoleInterface;
  * @version 0.1
  *
  * @ORM\Table(name="roles")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\RoleRepository")
  */
 class Role implements RoleInterface
 {
@@ -60,7 +60,7 @@ class Role implements RoleInterface
 
     public function __toString()
     {
-        return $this->name;
+        return $this->role;
     }
 
     /**

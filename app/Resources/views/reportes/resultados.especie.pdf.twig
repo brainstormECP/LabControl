@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+<h1>Resultados</h1>
+
+{% for entity in entities %}
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Muestra</th>
+            <th>Resultados de analisis</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{ entity }}</td>
+            <td>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Analisis</th>
+                        <th>Aprobado?</th>
+                        <th>Resultado</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for a in entity.analisisMuestras %}
+                        <tr>
+                            <td>{{ a.analisis }}</td>
+                            <td>{{ a.aprobado }}</td>
+                            <td>{{ a.resultado }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+{% endfor %}
+</body>
+</html>

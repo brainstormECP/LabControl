@@ -1,0 +1,266 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Elvis
+ * Date: 07/07/2015
+ * Time: 16:24
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Table(name="experimento")
+ * @ORM\Entity()
+ */
+class Experimento {
+
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $Id;
+
+    /**
+     * @var \DateTime
+     * @ORM\Column(type="datetime")
+     */
+    protected $FechaInicio;
+
+    /**
+     * @var \DateTime
+     * @ORM\Column(type="datetime")
+     */
+    protected $FechaFin;
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    protected $Observaciones;
+
+    /**
+     * @var Investigador
+     * @ORM\ManyToOne(targetEntity="Investigador", inversedBy="Experimentos")
+     * @ORM\JoinColumn(name="InvestigadorId", referencedColumnName="Id")
+     */
+    protected $Investigador;
+
+    /**
+     * @var Trabajo
+     * @ORM\ManyToOne(targetEntity="Trabajo", inversedBy="Experimentos")
+     * @ORM\JoinColumn(name="TrabajoId", referencedColumnName="Id")
+     */
+    protected $Trabajo;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Objetivo", mappedBy="Experimento")
+     */
+    protected $Objetivos;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Muestra", mappedBy="Experimento")
+     */
+    protected $Muestras;
+
+    public function __construct(){
+        $this->Objetivos = new ArrayCollection();
+        $this->Muestras = new ArrayCollection();
+    }
+
+    /**
+     * Get Id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->Id;
+    }
+
+    /**
+     * Set FechaInicio
+     *
+     * @param \DateTime $fechaInicio
+     * @return Experimento
+     */
+    public function setFechaInicio($fechaInicio)
+    {
+        $this->FechaInicio = $fechaInicio;
+
+        return $this;
+    }
+
+    /**
+     * Get FechaInicio
+     *
+     * @return \DateTime 
+     */
+    public function getFechaInicio()
+    {
+        return $this->FechaInicio;
+    }
+
+    /**
+     * Set FechaFin
+     *
+     * @param \DateTime $fechaFin
+     * @return Experimento
+     */
+    public function setFechaFin($fechaFin)
+    {
+        $this->FechaFin = $fechaFin;
+
+        return $this;
+    }
+
+    /**
+     * Get FechaFin
+     *
+     * @return \DateTime 
+     */
+    public function getFechaFin()
+    {
+        return $this->FechaFin;
+    }
+
+    /**
+     * Set Observaciones
+     *
+     * @param string $observaciones
+     * @return Experimento
+     */
+    public function setObservaciones($observaciones)
+    {
+        $this->Observaciones = $observaciones;
+
+        return $this;
+    }
+
+    /**
+     * Get Observaciones
+     *
+     * @return string 
+     */
+    public function getObservaciones()
+    {
+        return $this->Observaciones;
+    }
+
+
+
+    /**
+     * Set Trabajo
+     *
+     * @param \AppBundle\Entity\Trabajo $trabajo
+     * @return Experimento
+     */
+    public function setTrabajo(\AppBundle\Entity\Trabajo $trabajo = null)
+    {
+        $this->Trabajo = $trabajo;
+
+        return $this;
+    }
+
+    /**
+     * Get Trabajo
+     *
+     * @return \AppBundle\Entity\Trabajo 
+     */
+    public function getTrabajo()
+    {
+        return $this->Trabajo;
+    }
+
+    /**
+     * Add Objetivos
+     *
+     * @param \AppBundle\Entity\Objetivo $objetivos
+     * @return Experimento
+     */
+    public function addObjetivo(\AppBundle\Entity\Objetivo $objetivos)
+    {
+        $this->Objetivos[] = $objetivos;
+
+        return $this;
+    }
+
+    /**
+     * Remove Objetivos
+     *
+     * @param \AppBundle\Entity\Objetivo $objetivos
+     */
+    public function removeObjetivo(\AppBundle\Entity\Objetivo $objetivos)
+    {
+        $this->Objetivos->removeElement($objetivos);
+    }
+
+    /**
+     * Get Objetivos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getObjetivos()
+    {
+        return $this->Objetivos;
+    }
+
+    /**
+     * Add Muestras
+     *
+     * @param \AppBundle\Entity\Muestra $muestras
+     * @return Experimento
+     */
+    public function addMuestra(\AppBundle\Entity\Muestra $muestras)
+    {
+        $this->Muestras[] = $muestras;
+
+        return $this;
+    }
+
+    /**
+     * Remove Muestras
+     *
+     * @param \AppBundle\Entity\Muestra $muestras
+     */
+    public function removeMuestra(\AppBundle\Entity\Muestra $muestras)
+    {
+        $this->Muestras->removeElement($muestras);
+    }
+
+    /**
+     * Get Muestras
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getMuestras()
+    {
+        return $this->Muestras;
+    }
+
+    /**
+     * Set Investigador
+     *
+     * @param \AppBundle\Entity\Investigador $investigador
+     * @return Experimento
+     */
+    public function setInvestigador(\AppBundle\Entity\Investigador $investigador = null)
+    {
+        $this->Investigador = $investigador;
+
+        return $this;
+    }
+
+    /**
+     * Get Investigador
+     *
+     * @return \AppBundle\Entity\Investigador 
+     */
+    public function getInvestigador()
+    {
+        return $this->Investigador;
+    }
+}
